@@ -1,1 +1,15 @@
-<p>my-skills works!</p>
+<div class="my_skills">
+    <h1>My skills</h1>
+    <div class="my_skills_all_icons">
+        @for (item of mySkills; track item.name) {
+        <div class="my_skills_icon">
+            <img src="{{ item.icon }}">
+            <span>{{ item.name }}</span> 
+        </div>
+        }
+    </div>
+    <div class="contact_me">
+        <img src="/assets/img/18. Icons s3.png">
+        <span>Don't see the skill you need? <a href="mailto:your-email@example.com">Contact me</a> I'm Always Ready to learn!</span>
+    </div>
+</div>

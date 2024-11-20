@@ -1,8 +1,11 @@
 .arrow_section {
     display: flex;
     justify-content: end;
-    align-items: center;
+    align-items: start;
     padding: 0 100px;
+    height: 300px;
+    // margin-bottom: 42px;
+    
     img {
         height: 216px;
         width: auto;        
