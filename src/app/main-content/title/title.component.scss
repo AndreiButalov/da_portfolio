@@ -1,0 +1,31 @@
+@import "./../../../styles.scss";
+
+h1 {
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 128px;
+    line-height: 128px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 561px;
+    width: auto;
+
+}
+
+.title_name {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    >img {
+        width: auto;
+    }
+}

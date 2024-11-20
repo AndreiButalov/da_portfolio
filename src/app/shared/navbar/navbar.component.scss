@@ -1,0 +1,27 @@
+@import './../../../styles.scss';
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    max-width: 1440px;
+    margin: 0 auto;  
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    padding-left: 120px;
+}
+
+.burger_menu {
+    @include displayJustfAlign();
+    flex-direction: column;
+    padding-right: 120px;
+    gap: 10px;    
+    > img {
+        height: 4px;
+    }
+}
