@@ -4,6 +4,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
 import { HeaderComponent } from './header/header.component';
+import { ArrowSectionComponent } from './arrow-section/arrow-section.component';
 
 @Component({
   selector: 'app-main-content',
@@ -11,6 +12,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     HeaderComponent,
     AboutMeComponent,
+    ArrowSectionComponent,
     MySkillsComponent,
     PortfolioComponent,
     ReferencesComponent

@@ -1,7 +1,7 @@
 @import "./../../../styles.scss";
 
 .header {
-    margin-top: 112px;
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,9 +15,7 @@ h1 {
     font-family: 'Syne';
     font-weight: 800;
     font-size: 128px;
-    line-height: 128px;
-    margin-block-end: 0;
-    margin-block-start: 0;
+    line-height: 128px;    
 }
 
 .title {
@@ -38,7 +36,6 @@ h1 {
 
     >span {
         color: #00BC8F;
-        font-family: 'Overpass';
         font-weight: 700;
         font-size: 48px;
         line-height: 48px;
@@ -48,15 +45,16 @@ h1 {
 .scroll_down {
     display: flex;
     width: 100%;
+    max-width: 1440px;
     justify-content: space-between;
     align-items: end;
-    font-family: 'Overpass';
-    font-size: 22px;
-
+    font-size: 22px;    
+    
     >span {
         width: 22px;
         display: inline-block;
         transform: rotate(270deg);
+        cursor: pointer;
     }
     >div {
         display: flex;

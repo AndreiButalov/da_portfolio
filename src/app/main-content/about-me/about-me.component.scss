@@ -1,0 +1,80 @@
+@import "./../../../styles.scss";
+
+h1 {
+    font-family: 'Syne';
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 78px;
+    &:hover {
+        color: #00BC8F;
+    }
+
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    gap: 48px;
+    padding: 0 100px;
+    margin-top: 160px;
+}
+
+.about_me_content {
+    display: flex;
+    justify-content: space-between;    
+    >div {
+        width: 60%;
+    }
+    >img {
+        width: 30%;
+        object-fit: cover;
+    }
+}
+
+.about_me_left {
+    font-size: 22px;   
+}
+
+.about_me_adress {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 22px;
+
+    img {
+        width: 40px;
+        height: auto;
+        margin-right: 16px;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.about_me_button {
+    display: flex;
+    justify-content: center;
+
+    button {
+        margin-top: 40px;
+        background-color: #FFFCF3;
+        padding: 10px 60px;
+        border: 4px solid black;
+        font-size: 23px;
+        line-height: 27.6px;
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            padding: 10px 80px;
+            font-weight: 600;
+        }
+    }  
+
+
+}

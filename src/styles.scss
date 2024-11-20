@@ -1,84 +1,118 @@
 body {
-    margin: 0;
-    background-color: #FFFCF3;
+  margin: 0;
+  background-color: #FFFCF3;
+  font-family: 'Overpass';
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 @mixin displayJustfAlign() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /* overpass-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/overpass-v16-latin/overpass-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* overpass-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 500;
-    src: url('./assets/fonts/overpass-v16-latin/overpass-v16-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* overpass-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 600;
-    src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* overpass-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 700;
-    src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* overpass-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 800;
-    src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-800.woff') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* overpass-900 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Overpass';
-    font-style: normal;
-    font-weight: 900;
-    src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* syne-regular - latin */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/overpass-v16-latin/overpass-v16-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* overpass-500 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* syne-regular - latin */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/overpass-v16-latin/overpass-v16-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* overpass-600 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* syne-800 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 800;
-    src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* overpass-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* overpass-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 800;
+  src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-800.woff') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* overpass-900 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 900;
+  src: url('/assets/fonts/overpass-v16-latin/overpass-v16-latin-900.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* syne-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* syne-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* syne-800 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-800.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
