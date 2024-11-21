@@ -1,10 +1,78 @@
 .portfolio_content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     h1 {
         font-family: "Syne";
         font-weight: 800;
         font-size: 78px;
+    }    
+}
+
+.portfolio_content_text {
+    margin: 35px 0 118px 0;
+    text-align: center;
+
+    h2 {
+        font-size: 22px;
+        line-height: 26.4px;
+        margin-block-end: 0;
+        margin-block-start: 0;
     }
+}
+
+.portfolio_projects {
+    max-width: 1440px;
+    margin-bottom: 70px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 620px;
+        height: 393px;
+        margin: 35px 0;
+    }    
+}
+
+.projeckt_description {
+    width: 40%;
+    text-align: end;
+    margin-top: 30px;
+
+    span {
+        font-family: "Syne";
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57.6px;
+    }
+
+    div {
+        text-align: start;
+        margin-top: 60px;
+    }
+
+    h2 {
+        font-size: 23px;
+        color: #00bc8f;
+        font-weight: 400;
+    }
+
+    h1 {
+       font-size: 43px; 
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+}
+
+.portfolio_projects.row-reverse {
+    flex-direction: row-reverse;    
 }

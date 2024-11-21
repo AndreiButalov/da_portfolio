@@ -1,12 +1,46 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
 
+  projektsPortfolio = [
+    {
+      name: 'Join',
+      image: '/assets/img/join.png',
+      index: '01/04',
+      language: 'Angular | TypeScript | HTML | CSS | Firebase',
+      description: 'Task manager inspired by the Kanban System. Create and organize task using drag and drop function, assing user and categories.'
+    },
+    {
+      name: 'Sharkie',
+      image: '/assets/img/sharkie.png',
+      index: '02/04',
+      language: 'JavaScript | HTML | CSS',
+      description: 'A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.'
+    },
+    {
+      name: 'DABubble',
+      image: '/assets/img/bubble.png',
+      index: '03/04',
+      language: 'Andular | TypeScript | Firebase',
+      description: 'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.'
+    },
+    {
+      name: 'Pokedex',
+      image: '/assets/img/pokemon.png',
+      index: '04/04',
+      language: 'JavaScript | HTML | CSS | Api',
+      description: 'Based on the PokeApi a simple library that provides and catalogues pokemon information.'
+    },
+  ]
+  
 }
