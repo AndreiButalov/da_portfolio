@@ -1,12 +1,12 @@
 @import "./../../../styles.scss";
 
 .header {
-    margin-top: 200px;
+    margin-top: 100px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    height: 561px;
     width: auto;
     padding: 0 100px;
 }
@@ -43,6 +43,7 @@ h1 {
 }
 
 .scroll_down {
+    margin-top: 200px;
     display: flex;
     width: 100%;
     max-width: 1440px;

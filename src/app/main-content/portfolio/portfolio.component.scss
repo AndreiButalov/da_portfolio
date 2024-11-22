@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 .portfolio_content {
     display: flex;
     justify-content: center;
@@ -8,7 +10,7 @@
         font-family: "Syne";
         font-weight: 800;
         font-size: 78px;
-    }    
+    }
 }
 
 .portfolio_content_text {
@@ -37,7 +39,12 @@
         width: 620px;
         height: 393px;
         margin: 35px 0;
-    }    
+
+        &:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
 }
 
 .projeckt_description {
@@ -64,15 +71,20 @@
     }
 
     h1 {
-       font-size: 43px; 
+        font-size: 43px;
     }
 
     p {
         font-size: 16px;
     }
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
 }
 
 .portfolio_projects.row-reverse {
-    flex-direction: row-reverse;    
+    flex-direction: row-reverse;
 }

@@ -4,7 +4,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ReferencesComponent } from './references/references.component';
 import { HeaderComponent } from './header/header.component';
-import { ArrowSectionComponent } from './arrow-section/arrow-section.component';
+import { CommonModule } from '@angular/common';
+import { ContactMeComponent } from './contact-me/contact-me.component';
 
 @Component({
   selector: 'app-main-content',
@@ -12,10 +13,11 @@ import { ArrowSectionComponent } from './arrow-section/arrow-section.component';
   imports: [
     HeaderComponent,
     AboutMeComponent,
-    ArrowSectionComponent,
     MySkillsComponent,
     PortfolioComponent,
-    ReferencesComponent
+    ReferencesComponent,
+    CommonModule,
+    ContactMeComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

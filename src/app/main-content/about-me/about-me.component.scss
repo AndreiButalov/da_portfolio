@@ -57,6 +57,25 @@ h1 {
 
 .about_me_button {
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
 
+    a {
+        text-decoration: none; 
+        color: black;
+        margin-top: 64px;
+    }
+
+}
+
+.arrow_section {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    padding: 0 100px;
+    height: 300px;
+    
+    img {
+        height: 216px;
+        width: auto;        
+    }
 }

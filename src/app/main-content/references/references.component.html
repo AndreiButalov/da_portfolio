@@ -1,1 +1,14 @@
-<p>references works!</p>
+<div class="referebces_content">
+    <h1>References</h1>
+    <h2>I thrive both independently and part of a team. Here's what my colleagues have to say about working with me.</h2>
+    <div class="references_assessment">
+        @for (item of references; track $index) {
+            <div>
+                <img src="{{ item.image }}">
+                <h1>{{ item.name }}</h1>
+                <span>{{ item.status }}</span>
+                <p>{{ item.description }}</p>
+            </div>
+        }
+    </div>
+</div>
