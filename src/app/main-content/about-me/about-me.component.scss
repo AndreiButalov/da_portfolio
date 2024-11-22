@@ -5,6 +5,7 @@ h1 {
     font-weight: 800;
     font-size: 78px;
     line-height: 78px;
+    margin-bottom: 40px;
     &:hover {
         color: #00BC8F;
     }
@@ -13,11 +14,15 @@ h1 {
 
 .about_me {
     display: flex;
-    flex-direction: column;
-    max-width: 1440px;
+    justify-content: center;
     gap: 48px;
     padding: 0 100px;
     margin-top: 160px;
+
+    >div {
+        max-width: 1440px;
+        width: 100%;        
+    }
 }
 
 .about_me_content {
@@ -71,7 +76,7 @@ h1 {
     display: flex;
     justify-content: end;
     align-items: start;
-    padding: 0 100px;
+    // padding: 0 100px;
     height: 300px;
     
     img {

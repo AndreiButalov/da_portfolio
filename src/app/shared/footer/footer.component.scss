@@ -1,10 +1,17 @@
 .footer_content {
-    width: 1440px;
-    max-width: 1440px;
-    position: relative;
     display: flex;
-    // margin: 0 120px;
-    >img {
-        width: 2000px;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 180px;   
+}
+
+.footer {
+    max-width: 1654px;
+    width: 100%;
+    display: flex;
+
+    img {
+        max-width: 1640px;
+        width: 100%;
     }
 }
