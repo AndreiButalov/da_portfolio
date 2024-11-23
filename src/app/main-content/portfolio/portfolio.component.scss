@@ -5,15 +5,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0 100px;
 }
 
 .portfolio {
-    max-width: 1440px;
+    max-width: 1920px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 
     h1 {
         font-family: "Syne";
@@ -35,8 +37,8 @@
 }
 
 .portfolio_projects {
-    max-width: 1440px;
-    margin-bottom: 70px;
+    max-width: 1920px;
+    margin-bottom: 70px;   
     height: 460px;
     display: flex;
     justify-content: space-between;

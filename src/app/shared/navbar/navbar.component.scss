@@ -2,6 +2,7 @@
 
 
 .navbar {
+    max-width: 1920px;
     width: 100%;
     background-color: #FFFCF3;
     position: fixed; 
@@ -9,7 +10,6 @@
     transform: translate(-50%, -50%);
     top: 45px; 
     z-index: 999;  
-    max-width: 1440px;  
 }
 .navbar_content {    
     width: 100%;

@@ -1,12 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HeaderComponent } from "../header/header.component";
 
 @Component({
   selector: 'app-references',
   standalone: true,
   imports: [
-    CommonModule
-  ],
+    CommonModule,
+    HeaderComponent
+],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })
