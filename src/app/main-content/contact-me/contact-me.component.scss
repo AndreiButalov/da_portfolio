@@ -1,17 +1,82 @@
 .contact_me_content {
-    max-width: 1440px;
-    position: relative;
-    width: 100vw;
+    height: 700px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
 
+    background-color: black;
 
-    img {
-        width: 1100%;
-        height: auto;
-        // position: absolute;
-        // object-fit: cover;
-        // width: 100vw;
-        // max-width: 1440px;
+    h1 {
+        color: #00bc8f;
+        font-size: 32px;
+        line-height: 38.4px;
     }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        height: 50px;
+        background-color: black;
+        border: 0px;
+        border-bottom: 1px solid #FFFCF3;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+
+        &:hover {
+            border: 4px #FFFCF3 solid;
+        }
+    }
+
+    textarea {
+        height: 200px;
+        background-color: black;
+        border: 0px;
+        border-bottom: 1px solid #FFFCF3;
+        box-sizing: border-box;
+
+        &:hover {
+            border: 4px #FFFCF3 solid;
+        }
+    }
+
+    span {
+        font-size: 14px;
+
+        a {
+            text-decoration: none;
+            color: #00bc8f;
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.check_box {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    span {
+        margin: 20px 0 0 10px;
+    }
+}
+
+.send_message {
+    padding: 20px 60px;
+    font-size: 23px;
+    line-height: 27.6px;
+    color: #BBBBBB;
+    border: 4px #BBBBBB solid;
+    background-color: black;
+    cursor: pointer;
 }

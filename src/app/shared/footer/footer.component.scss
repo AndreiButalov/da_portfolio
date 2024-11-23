@@ -1,17 +1,47 @@
 .footer_content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
-    margin-top: 180px;   
+    margin-top: 140px;   
 }
 
 .footer {
     max-width: 1920px;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    background-image: url("/assets/img/Rectangle 5 (1).png");
+    background-size: cover;
+    justify-content: space-between;
+
+    >img {
+        height: 78px;
+        width: 426px;
+        margin: 150px 0 0 100px;
+    }
+}
+
+.infos_about_me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 40px;
 
     img {
-        max-width: 1920px;
-        width: 100%;
+        width: 30px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    span {
+        color: white;
+        cursor: pointer;
+    }
+
+    div {
+        display: flex;
+        align-items: end;
+        gap: 50px
     }
 }
