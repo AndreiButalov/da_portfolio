@@ -44,9 +44,17 @@ h1 {
 
 .white_div {
     height: 180px;
-    width: 100%;
-    background-color: #FFFCF3;
-    z-index: 900;
+    max-width: 1920px;
+    width: 100%; 
+    display: flex; 
+    justify-content: end;  
+    
+    div {
+        background-color: #FFFCF3;
+        height: 100%;
+        width: 500px;
+        z-index: 900;
+    }
 }
 
 .scroll_down {
