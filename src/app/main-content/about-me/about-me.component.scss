@@ -6,6 +6,7 @@ h1 {
     font-size: 78px;
     line-height: 78px;
     margin-bottom: 40px;
+
     &:hover {
         color: #00BC8F;
     }
@@ -21,16 +22,18 @@ h1 {
 
     >div {
         max-width: 1920px;
-        width: 100%;        
+        width: 100%;
     }
 }
 
 .about_me_content {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+
     >div {
         width: 60%;
     }
+
     >img {
         width: 30%;
         object-fit: cover;
@@ -38,7 +41,7 @@ h1 {
 }
 
 .about_me_left {
-    font-size: 22px;   
+    font-size: 22px;
 }
 
 .about_me_adress {
@@ -62,10 +65,10 @@ h1 {
 
 .about_me_button {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 
     a {
-        text-decoration: none; 
+        text-decoration: none;
         color: black;
         margin-top: 64px;
     }
@@ -78,8 +81,56 @@ h1 {
     align-items: start;
     height: 300px;
     
-    img {
-        height: 216px;
-        width: auto;        
+    &:hover {
+
+        img {
+            height: 216px;
+            width: auto;
+            animation: fade_move_down 1.25s ease-in-out infinite;
+        }
+
+        @keyframes fade_move_down {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: scale(1.2);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-70px, 100px);
+                opacity: 0;
+            }
+        }
     }
 }
+
+// .arrow_section_animation {
+//     -webkit-animation: fade_move_down 1.25s ease-in-out infinite;
+//     -moz-animation: fade_move_down 1.25s ease-in-out infinite;
+//     animation: fade_move_down 1.25s ease-in-out infinite;
+
+//     @keyframes fade_move_down {
+//         0% {
+//             transform: translate(0, 0);
+//         }
+
+//         25% {
+//             transform: scale(1.2);
+//         }
+
+//         50% {
+//             opacity: 1;
+//         }
+
+//         100% {
+//             transform: translate(-60px, 100px);
+//             opacity: 0;
+//         }
+//     }
+// }
