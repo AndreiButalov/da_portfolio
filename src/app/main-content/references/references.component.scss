@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 120px 100px;
+    margin: 120px 100px 0 100px;
 }
 
 
@@ -72,5 +72,46 @@
         }
 
         
+    }
+}
+
+.arrow_section {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    height: 300px;
+
+    img {
+        height: 216px;
+            width: auto;
+    }
+    
+    &:hover {
+        
+        img {
+            height: 216px;
+            width: auto;
+            animation: fade_move_down 1.25s ease-in-out infinite;
+        }
+
+        @keyframes fade_move_down {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: scale(1.2);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-70px, 100px);
+                opacity: 0;
+            }
+        }
     }
 }
