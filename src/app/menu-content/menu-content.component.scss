@@ -13,7 +13,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 35px;
+
     p {
         font-family: 'Syne';
         font-size: 96px;
@@ -21,6 +22,55 @@
         margin-block-end: 0;
         margin-block-start: 0;
         cursor: pointer;
+    }
+
+    div {
+        height: 167px;
+        width: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 0 38px;
+        overflow: hidden;
+
+        img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        &:hover img{
+            visibility: hidden;
+        }
+
+    }
+
+    div::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        visibility: hidden; 
+    }
+    
+    div:hover::after {
+        visibility: visible;
+        animation: shrink-border 0.5s forwards;
+    }
+    
+    @keyframes shrink-border {
+        0% {
+            left: 0;         
+            width: 100%;      
+        }
+        100% {
+            left: calc(100% - 200px);
+            width: 200px;            
+        }
     }
 }
 
