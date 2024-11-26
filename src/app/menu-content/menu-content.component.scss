@@ -1,0 +1,29 @@
+.menu_content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.content {
+    padding-top: 152px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    p {
+        font-family: 'Syne';
+        font-size: 96px;
+        font-weight: 700;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        cursor: pointer;
+    }
+}
+
+.footer {
+    width: 100%;
+}
