@@ -33,10 +33,35 @@ h1 {
     >div {
         width: 60%;
     }
+}
 
-    >img {
-        width: 30%;
+.foto_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: end;
+
+    .foto {
+        width: 450px;
+        height: 600px;
+        cursor: pointer;
         object-fit: cover;
+    }
+
+    .foto_border {
+        position: absolute;
+        width: 442px;
+        height: 594px;
+        border: 4px solid black;
+        top: 15px;
+        right: -17px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s;
+    }
+
+    &:hover .foto_border {
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -86,6 +111,7 @@ h1 {
         img {
             height: 216px;
             width: auto;
+            cursor: pointer;
             animation: fade_move_down 1.25s ease-in-out infinite;
         }
 
