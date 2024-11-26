@@ -1,12 +1,10 @@
-import { Component } from '@angular/core';
-import { ContactMeComponent } from '../../main-content/contact-me/contact-me.component';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   imports: [
-    ContactMeComponent,
     CommonModule
   ],
   templateUrl: './footer.component.html',
@@ -14,4 +12,5 @@ import { CommonModule } from '@angular/common';
 })
 export class FooterComponent {
   email = 'andrei.butalov@gmx.de';
+  @Input() showContactForm: boolean = false;
 }

@@ -5,13 +5,14 @@
     max-width: 1920px;
     width: 100%;
     background-color: #FFFCF3;
-    position: fixed; 
+    position: fixed;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 45px; 
-    z-index: 999;  
+    top: 45px;
+    z-index: 999;
 }
-.navbar_content {    
+
+.navbar_content {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -26,10 +27,14 @@
 }
 
 .burger_menu {
-    @include displayJustfAlign();
-    flex-direction: column;
-    gap: 10px;    
-    > img {
+    a {
+        @include displayJustfAlign();
+        flex-direction: column;
+        gap: 10px;
+        padding-right: 100px;
+    }
+
+    >img {
         height: 4px;
         padding-right: 100px;
     }
