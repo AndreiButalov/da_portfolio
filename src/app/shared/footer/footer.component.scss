@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .footer {
@@ -27,7 +27,7 @@
     justify-content: space-between;
     padding: 0 100px 40px;
 
-    img {
+    a {
         width: 30px;
         height: auto;
         cursor: pointer;
@@ -51,9 +51,11 @@
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -82,14 +84,28 @@
     h2 {
         font-size: 22px;
     }
+}
 
-    img {
-        position: absolute;
-        bottom: 20px;
-        left: 100px;
-        height: 40px;
-        width: 80px;
-    }
+.logo {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    height: 40px;
+    width: 80px;
+}
+
+.arrow {
+    height: 76px;
+    position: absolute;
+    bottom: 106px;
+    right: 88px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: bottom; 
+}
+
+.arrow:hover {
+    transform: scaleY(1.4);
 }
 
 .form_content {
@@ -97,7 +113,8 @@
     flex-direction: column;
     text-align: start;
 
-    input, textarea {
+    input,
+    textarea {
         color: #FFFCF3;
         background-color: black;
         line-height: 19.2px;
