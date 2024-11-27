@@ -1,20 +1,22 @@
 <div class="my_skills">
+    <div  id="my_skills" class="arrow_section">
+        <a href="#my_skills"><img src="assets/img/Group4.png"></a>            
+    </div>
     <div class="my_skills_content">
         <h1>My skills</h1>
         <div class="my_skills_all_icons">
             @for (item of mySkills; track item.name) {
             <div class="my_skills_icon">
-                <img src="{{ item.icon }}">
+                <img class="icon_animation" src="{{ item.icon }}">
                 <span>{{ item.name }}</span> 
             </div>
             }
         </div>
         <div class="contact_me">
-            <img src="/assets/img/18. Icons s3.png">
+            <div>
+                <img class="icon_animation" src="/assets/img/18. Icons s3.png">
+            </div>
             <span>Don't see the skill you need? <a href="mailto:your-email@example.com">Contact me</a> I'm Always Ready to learn!</span>
         </div>
-    </div>
-    <div class="arrow_section">
-        <img src="assets/img/Group4.png">
     </div>
 </div>

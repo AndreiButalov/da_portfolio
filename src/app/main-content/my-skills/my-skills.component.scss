@@ -12,7 +12,7 @@
     font-size: 78px;
     position: relative;
     top: -54px;
-    background-color: white;
+    background-color: #FFFCF3;
     display: inline-block;
     z-index: 1;
     padding: 0 10px;
@@ -38,9 +38,46 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  overflow: hidden;
 
   img {
     width: 70px;
+  }
+
+}
+
+.my_skills_icon:hover span {
+  color: #00bc8f;
+}
+
+.icon_animation {
+  width: 70px;
+  transition: transform 0.3s ease;
+}
+
+.icon_animation:hover {
+  animation: swing 0.5s ease-in-out forwards;
+}
+
+@keyframes swing {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(35px);
+  }
+
+  50% {
+    transform: translateX(-35px);
+  }
+
+  75% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -51,13 +88,22 @@
   grid-gap: 100px;
   justify-items: center;
   align-items: center;
+
 }
 
 .contact_me {
   padding: 48px 0 120px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 24px;
+
+  div {
+    overflow: hidden;
+  }
+
 
   img {
-    margin-right: 16px;
     width: 75px;
   }
 
@@ -68,42 +114,39 @@
 }
 
 .arrow_section {
-  margin: 0 100px;
   max-width: 1440px;
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: start;
-  padding: 0 100px;
   height: 300px;
 
-  img {
-    height: 216px;
-    width: auto;
-    cursor: pointer;
-    transform: scaleX(-1);
-  }
-}
+  &:hover {
 
-.arrow_section:hover img {
-  animation: fade_move_down_mirror 1.25s ease-in-out infinite;
-}
+    img {
+      height: 216px;
+      width: auto;
+      cursor: pointer;
+      animation: fade_move_down 1.25s ease-in-out infinite;
+    }
 
-@keyframes fade_move_down_mirror {
-  0% {
-    transform: translate(0, 0) scaleX(-1);
-  }
+    @keyframes fade_move_down {
+      0% {
+        transform: translate(0, 0);
+      }
 
-  25% {
-    transform: scale(1.2) scaleX(-1);
-  }
+      25% {
+        transform: scale(1.2);
+      }
 
-  50% {
-    opacity: 1;
-  }
+      50% {
+        opacity: 1;
+      }
 
-  100% {
-    transform: translate(70px, 100px) scaleX(-1);
-    opacity: 0;
+      100% {
+        transform: translate(-70px, 100px);
+        opacity: 0;
+      }
+    }
   }
 }
