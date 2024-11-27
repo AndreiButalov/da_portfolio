@@ -18,10 +18,14 @@ h1 {
 }
 
 .title {
-    margin-top: 92px;
+    margin-top: 134px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FFFCF3;
+    z-index: 5;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .title_name {
@@ -68,7 +72,7 @@ h1 {
     max-width: 1440px;
     justify-content: space-between;
     align-items: end;
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
 
     >span {
