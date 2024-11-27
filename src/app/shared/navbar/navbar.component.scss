@@ -1,11 +1,12 @@
 @import './../../../styles.scss';
 
-
 .navbar {
     max-width: 1920px;
     width: 100%;
     background-color: #FFFCF3;
     position: fixed;
+    display: flex;
+    justify-content: center;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 45px;
@@ -13,7 +14,9 @@
 }
 
 .navbar_content {
+    padding: 0 100px;
     width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,19 +26,58 @@
 .logo {
     height: 40px;
     width: 80px;
-    padding-left: 100px
 }
 
 .burger_menu {
-    a {
-        @include displayJustfAlign();
-        flex-direction: column;
-        gap: 10px;
-        padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 42px;
+    cursor: pointer;
+    position: relative;
+
+    .bar {
+        height: 3px;
+        width: 42px;
+        background-color: black;
+        transition: all 0.5s ease;
+        position: relative;
     }
 
-    >img {
-        height: 4px;
-        padding-right: 100px;
+    .bar2 {
+        display: flex;
+        justify-content: space-between;
+
+
+        .bar2-left,
+        .bar2-right {
+            background-color: black;
+            height: 3px;
+            width: 20px;
+            transition: all 0.5s ease;
+        }
+    }
+
+    &.active {
+        .bar1 {
+            transform: rotate(45deg) translate(5px, 10px);
+        }
+
+        .bar2 {
+            opacity: 0;
+
+            .bar2-left {
+                transform: translateX(-20px);
+            }
+
+            .bar2-right {
+                transform: translateX(20px);
+            }
+        }
+
+        .bar3 {
+            transform: rotate(-45deg) translate(5px, -10px);
+        }
     }
 }

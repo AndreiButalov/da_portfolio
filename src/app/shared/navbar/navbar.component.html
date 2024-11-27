@@ -1,12 +1,17 @@
 <div class="navbar">
     <div class="navbar_content">
         <a href="">
-            <img class="logo" src="assets/img/logo.png">
+            <img class="logo" src="assets/img/logo.png" alt="Logo">
         </a>
-        <div class="burger_menu">
-            <a href="menu">
-                <img *ngFor="let c of [1,2,3]" src="/assets/img/Vector 8.png">        
-            </a>
-        </div>
+        <a [href]="menuActive ? 'menu' : ''" class="toggle-link">
+            <div class="burger_menu" (click)="toggleMenu()" [class.active]="menuActive">
+                <div class="bar bar1"></div>
+                <div class="bar bar2">
+                    <div class="bar2-left"></div>
+                    <div class="bar2-right"></div>
+                </div>
+                <div class="bar bar3"></div>
+            </div>
+        </a>
     </div>
 </div>
