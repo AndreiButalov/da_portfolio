@@ -5,16 +5,28 @@
             <div id="contact_me" class="formular">
                 <h1>Want to discuss a new project?</h1>
                 <h2>Say hello! Let's discuss your ideas and make it happen</h2>
-                <div class="form_content">
-                    <input type="text">
-                    <input type="text">
-                    <textarea name="" id=""></textarea>
-                    <div class="check_box">
-                        <input type="checkbox">
-                        <span>I've read the <a href="#">privacy policy</a> and agree to the processing of my data as outlined.</span>
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                    <div class="form_content">
+                        <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
+                        @if(!name.valid && name.touched) {
+                            <span>Please enter a name</span>
+                        }
+                        <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        @if(!email.valid && email.touched) {
+                            <span>Please enter a email</span>
+                        }
+                        <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message" placeholder="Your message" required></textarea>
+                        @if(!message.valid && message.touched) {
+                            <span>Please enter a message</span>
+                        }
+                        <div class="check_box">
+                            <input type="checkbox">
+                            <span>I've read the <a>privacy policy</a> and agree to the processing of my data as
+                                outlined.</span>
+                        </div>
                     </div>
-                </div>
-                <button class="send_message">Send message</button>
+                    <button type="submit" class="send_message">Send message</button>
+                </form>
             </div>
             <a href=""><img class="logo" src="/assets/img/logoW.png"></a>
             <a href=""><img class="arrow" src="/assets/img/7. arrow.png"></a>
@@ -24,7 +36,6 @@
             <div class="social_medien">
                 <a href="https://github.com/AndreiButalov" target="_blank"><img src="/assets/img/github.png"></a>
                 <a href=""><img src="/assets/img/mail.png"></a>
-                <!-- <a href=""><img src="/assets/img/in.png"></a> -->
             </div>
         </div>
     </div>
