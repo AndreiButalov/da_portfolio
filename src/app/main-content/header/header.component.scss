@@ -4,7 +4,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: auto;
     padding: 0 100px;
@@ -26,6 +26,7 @@ h1 {
     z-index: 5;
     max-width: 1440px;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .title_name {
