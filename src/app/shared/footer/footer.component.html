@@ -7,17 +7,21 @@
                 <h2>Say hello! Let's discuss your ideas and make it happen</h2>
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="form_content">
-                        <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text" placeholder="Your name" required>
+                        <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                            placeholder="Your name" required>
                         @if(!name.valid && name.touched) {
-                            <span>Please enter a name</span>
+                        <span>Please enter a name</span>
                         }
-                        <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text" placeholder="Your email" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text"
+                            placeholder="Your email" required
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                         @if(!email.valid && email.touched) {
-                            <span>Please enter a email</span>
+                        <span>Please enter a email</span>
                         }
-                        <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message" placeholder="Your message" required></textarea>
+                        <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message"
+                            placeholder="Your message" required></textarea>
                         @if(!message.valid && message.touched) {
-                            <span>Please enter a message</span>
+                        <span>Please enter a message</span>
                         }
                         <div class="check_box">
                             <input type="checkbox">
@@ -32,11 +36,12 @@
             <a href=""><img class="arrow" src="/assets/img/7. arrow.png"></a>
         </div>
         <div class="infos_about_me">
-            <span class="email">{{ email }}</span>
+            <span class="email">andrei.butalo&#64;gmx.de</span>
             <div class="social_medien">
                 <a href="https://github.com/AndreiButalov" target="_blank"><img src="/assets/img/github.png"></a>
                 <a href=""><img src="/assets/img/mail.png"></a>
             </div>
         </div>
+        <a class="legal_notice" href="imprint">Legal notice</a>
     </div>
 </div>

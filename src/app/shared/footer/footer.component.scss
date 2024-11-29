@@ -13,7 +13,8 @@
     background-image: url("/assets/img/Rectangle 5 (1).png");
     background-size: cover;
     justify-content: space-between;
-
+    position: relative;
+    
     >img {
         height: 78px;
         width: 426px;
@@ -27,7 +28,7 @@
     justify-content: space-between;
     padding: 0 100px 40px;
 
-    a {
+    img {
         width: 30px;
         height: auto;
         cursor: pointer;
@@ -174,4 +175,14 @@
     border: 4px #BBBBBB solid;
     background-color: black;
     cursor: pointer;
+}
+
+
+.legal_notice {
+    text-decoration: none;
+    color: #FFFCF3;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
 }

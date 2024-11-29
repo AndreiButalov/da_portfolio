@@ -14,7 +14,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  email = 'andrei.butalov@gmx.de';
   @Input() showContactForm: boolean = false;
 
   http = inject(HttpClient);
