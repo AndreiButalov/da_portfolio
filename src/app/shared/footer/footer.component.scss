@@ -14,7 +14,7 @@
     background-size: cover;
     justify-content: space-between;
     position: relative;
-    
+
     >img {
         height: 78px;
         width: 426px;
@@ -37,7 +37,6 @@
 
     span {
         color: white;
-        cursor: pointer;
         font-size: 22px;
     }
 
@@ -102,7 +101,7 @@
     right: 88px;
     cursor: pointer;
     transition: transform 0.3s ease;
-    transform-origin: bottom; 
+    transform-origin: bottom;
 }
 
 .arrow:hover {
@@ -133,7 +132,6 @@
 
     input {
         height: 50px;
-        margin-bottom: 20px;
         outline: none;
     }
 
@@ -144,8 +142,8 @@
 
     span {
         font-size: 14px;
-        
-        a {
+
+        u {
             font-weight: 400px;
             text-decoration: none;
             color: #00bc8f;
@@ -157,14 +155,61 @@
     }
 }
 
+
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkbox-indicator {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkbox-indicator::before {
+    content: "✔";
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.check_box:hover .custom-checkbox::before,
+.privacy-link:hover ~ .custom-checkbox .checkbox-indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 188, 143, 0.9);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
 .check_box {
     display: flex;
     align-items: start;
     justify-content: center;
-
-    span {
-        margin: 20px 0 0 10px;
-    }
+    margin: 16px 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .send_message {
@@ -185,4 +230,11 @@
     position: absolute;
     bottom: 10px;
     right: 100px;
+}
+
+.message {
+    color: red;
+    font-size: 8px;
+    font-weight: 400 !important;
+    margin-top: 5px;
 }
