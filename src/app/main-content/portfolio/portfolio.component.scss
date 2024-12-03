@@ -157,6 +157,11 @@
 
 }
 
+.links_group {
+    display: flex;
+    justify-content: space-between;
+}
+
 .image_border.row-reverse {
     flex-direction: row-reverse;
 }

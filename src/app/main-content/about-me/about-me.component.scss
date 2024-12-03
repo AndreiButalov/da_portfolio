@@ -43,7 +43,6 @@ h1 {
     .foto {
         width: 450px;
         height: 600px;
-        cursor: pointer;
         object-fit: cover;
     }
 
@@ -66,10 +65,10 @@ h1 {
 }
 
 .about_me_left {
-    font-size: 22px;
+    font-size: 22px;   
 }
 
-.about_me_adress {
+.about_me_address {
     margin-top: 48px;
     display: flex;
     flex-direction: column;
@@ -91,11 +90,11 @@ h1 {
 .about_me_button {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 
     a {
         text-decoration: none;
         color: black;
-        margin-top: 64px;
     }
 
 }
