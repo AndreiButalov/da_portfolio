@@ -12,6 +12,8 @@ import { CommonModule } from '@angular/common';
 })
 export class PortfolioComponent {
 
+  // https://join-209.developerakademie.net/
+
   projektsPortfolio = [
     {
       name: 'Join',

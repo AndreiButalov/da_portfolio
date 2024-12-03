@@ -143,10 +143,11 @@
     span {
         font-size: 14px;
 
-        u {
+        a {
             font-weight: 400px;
             text-decoration: none;
             color: #00bc8f;
+            cursor: pointer;
 
             &:hover {
                 font-weight: 700;
@@ -206,7 +207,7 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    margin: 16px 0 40px;
+    margin: 16px 0px;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -237,4 +238,11 @@
     font-size: 8px;
     font-weight: 400 !important;
     margin-top: 5px;
+}
+
+.privacy_policy {
+    color: red;
+    font-size: 8px;
+    font-weight: 400 !important;
+    margin: 0 15px 40px 0;
 }

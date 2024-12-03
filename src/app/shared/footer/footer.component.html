@@ -5,35 +5,41 @@
             <div id="contact_me" class="formular">
                 <h1>Want to discuss a new project?</h1>
                 <h2>Say hello! Let's discuss your ideas and make it happen</h2>
-                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm, privacyCheckbox)" #contactForm="ngForm">
                     <div class="form_content">
                         <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
                             placeholder="Your name" required>
-                        @if(!name.valid && name.touched) {
-                        <span class="message">Please enter a name</span>
-                        }
+                        <span *ngIf="!name.valid && name.touched" class="message">Please enter a name</span>
+
                         <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text"
                             placeholder="Your email" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                        @if(!email.valid && email.touched) {
-                        <span class="message">Please enter a email</span>
-                        }
+                        <span *ngIf="!email.valid && email.touched" class="message">Please enter an email</span>
+
                         <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message"
                             placeholder="Your message" required></textarea>
-                        @if(!message.valid && message.touched) {
-                        <span class="message">Please enter a message</span>
-                        }
+                        <span *ngIf="!message.valid && message.touched" class="message">Please enter a message</span>
+
                         <div class="check_box">
                             <label for="privacy-checkbox" class="custom-checkbox">
-                                <input type="checkbox" id="privacy-checkbox">
+                                <input type="checkbox" id="privacy-checkbox" [(ngModel)]="acceptPrivacyPolicy"
+                                    #privacyCheckbox="ngModel" name="privacyPolicy" required>
                                 <span class="checkbox-indicator"></span>
                             </label>
-                            <span>I've read the <u class="privacy-link">privacy policy</u> and agree to the processing of my data as outlined.</span>
+                            <span>I've read the <u class="privacy-link">privacy policy</u> and agree to the processing
+                                of my data as outlined.</span>
                         </div>
+                        <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">Please accept the
+                            privacy policy</span>
                     </div>
-                    <button type="submit" class="send_message">Send message</button>
+                    <button type="submit" class="send_message" [ngStyle]="{
+                        'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
+                        'border': acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
+                    }">
+                        Send message
+                    </button>
                 </form>
-                
+
             </div>
             <a href=""><img class="logo" src="/assets/img/logoW.png"></a>
             <a href=""><img class="arrow" src="/assets/img/7. arrow.png"></a>

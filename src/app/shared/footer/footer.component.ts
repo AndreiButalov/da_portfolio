@@ -24,8 +24,11 @@ export class FooterComponent {
     message: '',
   }
 
-  
+
   mailTest = true;
+
+  acceptPrivacyPolicy: boolean = false; // Bindet den Zustand der Checkbox
+  showPrivacyError: boolean = false; // Steuert die Anzeige der Fehlermeldung
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -38,29 +41,37 @@ export class FooterComponent {
     },
   };
 
-//   onSubmit(ngForm: NgForm) {
-//     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-//       this.http.post(this.post.endPoint, this.post.body(this.contactData))
-//         .subscribe({
-//           next: (response) => {
+  //   onSubmit(ngForm: NgForm) {
+  //     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+  //       this.http.post(this.post.endPoint, this.post.body(this.contactData))
+  //         .subscribe({
+  //           next: (response) => {
 
-//             ngForm.resetForm();            
-//           },
-//           error: (error) => {
-//             console.error(error);
-//           },
-//           complete: () => console.info('send post complete'),
-//         });
-//     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+  //             ngForm.resetForm();            
+  //           },
+  //           error: (error) => {
+  //             console.error(error);
+  //           },
+  //           complete: () => console.info('send post complete'),
+  //         });
+  //     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
 
-//       ngForm.resetForm();
-//     }
-//   }
+  //       ngForm.resetForm();
+  //     }
+  //   }
 
-onSubmit(ngForm: NgForm) {
-  if(ngForm.valid && ngForm.submitted) {
-    console.log('hallo');
-    ngForm.resetForm();
+  onSubmit(ngForm: NgForm, privacyCheckbox: any) {
+    if (!this.acceptPrivacyPolicy) {
+      this.showPrivacyError = true;
+      return;
+    } else {
+      this.showPrivacyError = false;
+    }
+
+    if (ngForm.valid) {
+      console.log('Form submitted:', this.contactData);
+      ngForm.resetForm();
+      this.acceptPrivacyPolicy = false; // Reset der Checkbox nach dem Senden
+    }
   }
-}
 }
