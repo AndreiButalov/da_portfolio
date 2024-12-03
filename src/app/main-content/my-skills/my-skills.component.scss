@@ -9,9 +9,10 @@
   h1 {
     font-family: "Syne";
     font-weight: 800;
-    font-size: 78px;
+    font-size: clamp(32px, 3vw, 78px);
+    line-height: clamp(32px, 3vw, 78px);
     position: relative;
-    top: -54px;
+    top: -35px;
     background-color: #FFFCF3;
     display: inline-block;
     z-index: 1;
@@ -88,7 +89,6 @@
   grid-gap: 100px;
   justify-items: center;
   align-items: center;
-
 }
 
 .contact_me {
@@ -147,6 +147,60 @@
         transform: translate(-70px, 100px);
         opacity: 0;
       }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .my_skills {
+    margin: 0 30px;
+
+    h1 {
+      top: -22px;
+    }
+  }
+
+  .my_skills_all_icons {
+    padding: 40px 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 25px;
+  }
+
+  .my_skills_all_icons> :nth-child(10) {
+    grid-column: 2 / span 1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact_me {
+    justify-content: space-around;
+    padding: 20px 10px;
+    gap: 10px;
+    span {
+      width: 40%;
+      font-size: 14px;
+    }
+  }  
+}
+
+@media (max-width: 500px) {
+  .my_skills_icon {
+    font-size: 13px;
+
+    img {
+      width: 50px;
+    }
+  }
+
+  .contact_me {
+    padding: 10px 0;
+    gap: 0;    img {
+      width: 50px;
+    }    
+    span {
+      font-size: 12px;
     }
   }
 }
