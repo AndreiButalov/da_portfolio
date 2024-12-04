@@ -332,10 +332,10 @@
         width: 100%;
         height: auto;
     }
-    
+
 }
 
-@media (max-width: 600px) {    
+@media (max-width: 600px) {
     .portfolio_projects {
         img {
             margin: 0;
@@ -354,6 +354,7 @@
     }
 
     .portfolio_projects {
+        margin-bottom: 10px;
         img {
             height: 250px;
         }
