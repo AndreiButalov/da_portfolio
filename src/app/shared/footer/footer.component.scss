@@ -77,12 +77,11 @@
 
     h1 {
         color: #00bc8f;
-        font-size: 32px;
-        line-height: 38.4px;
+        font-size: clamp(18px, 6vw, 32px);
     }
 
     h2 {
-        font-size: 22px;
+        font-size: clamp(16px, 5vw, 22px);
     }
 }
 
@@ -190,7 +189,7 @@
 
 
 .check_box:hover .custom-checkbox::before,
-.privacy-link:hover ~ .custom-checkbox .checkbox-indicator::before {
+.privacy-link:hover~.custom-checkbox .checkbox-indicator::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -245,4 +244,65 @@
     font-size: 8px;
     font-weight: 400 !important;
     margin: 0 15px 40px 0;
+}
+
+@media (max-width: 700px) {
+    .contact_me_content {
+        width: 90%;
+    }
+
+    .arrow_up {
+        display: none;
+    }
+
+    .infos_about_me {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .legal_notice {
+        text-align: center;
+        margin-top: 0px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer {
+        align-items: center;
+
+        >img {
+            width: 70%;
+            margin: 150px 0 10px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .contact_me_content {
+        padding-top: 20px;
+    }
+
+    .send_message {
+        padding: 10px 40px;
+        font-size: 14px;
+        
+    }
+
+    .logo {
+        bottom: 82px;        
+    }
+
+    .infos_about_me {
+        padding: 0 0 80px 0;
+        width: 100%;
+    }
+
+    .legal_notice {
+        width: 100%;
+    }
 }
