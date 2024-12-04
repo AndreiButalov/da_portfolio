@@ -179,3 +179,13 @@ h1 {
   src: url('./assets/fonts/syne-v22-latin/syne-v22-latin-800.woff2') format('woff2');
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@media (max-width: 500px) {
+  .button_group {
+    padding: 10px 50px;
+    font-size: 18px;  
+    &:hover {
+      padding: 10px 70px;
+    }
+  }
+}

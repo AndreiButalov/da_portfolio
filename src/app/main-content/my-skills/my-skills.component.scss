@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
 
-
   h1 {
     font-family: "Syne";
     font-weight: 800;
@@ -13,7 +12,7 @@
     line-height: clamp(24px, 6vw, 78px);
     position: relative;
     top: -35px;
-    background-color: #FFFCF3;
+    background-color: #fffcf3;
     display: inline-block;
     z-index: 1;
     padding: 0 10px;
@@ -44,7 +43,6 @@
   img {
     width: 70px;
   }
-
 }
 
 .my_skills_icon:hover span {
@@ -102,7 +100,6 @@
     overflow: hidden;
   }
 
-
   img {
     width: 75px;
   }
@@ -122,10 +119,7 @@
   height: 300px;
 
   &:hover {
-
-    img {
-      height: 216px;
-      width: auto;
+    img {      
       cursor: pointer;
       animation: fade_move_down 1.25s ease-in-out infinite;
     }
@@ -152,7 +146,6 @@
 }
 
 @media (max-width: 1200px) {
-
   .my_skills {
     margin: 0 30px;
 
@@ -167,7 +160,7 @@
     grid-gap: 20px 25px;
   }
 
-  .my_skills_all_icons> :nth-child(10) {
+  .my_skills_all_icons > :nth-child(10) {
     grid-column: 2 / span 1;
     justify-self: center;
   }
@@ -185,8 +178,15 @@
     }
   }
 
-  .my_skills {
+  .arrow_section {
+    height: 220px;
 
+    img {
+      height: 116px;
+    }
+  }
+
+  .my_skills {
     h1 {
       top: -22px;
     }

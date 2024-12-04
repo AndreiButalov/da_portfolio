@@ -98,8 +98,6 @@
     &:hover {
 
         img {
-            height: 216px;
-            width: auto;
             animation: fade_move_down 1.25s ease-in-out infinite;
         }
 
@@ -143,13 +141,22 @@
             margin: 11px 0 30px 0;
         }
     }
+
+    .arrow_section {
+        height: 150px;
+
+        img {
+            height: 116px;
+           
+        }
+    }
 }
 
 @media (max-width: 500px) {
     .references_assessment {
         >div {
             width: 80%;
-            height: 300px;
+            height: auto;
         }
     }
 }
