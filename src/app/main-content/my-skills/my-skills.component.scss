@@ -9,8 +9,8 @@
   h1 {
     font-family: "Syne";
     font-weight: 800;
-    font-size: clamp(32px, 3vw, 78px);
-    line-height: clamp(32px, 3vw, 78px);
+    font-size: clamp(24px, 6vw, 78px);
+    line-height: clamp(24px, 6vw, 78px);
     position: relative;
     top: -35px;
     background-color: #FFFCF3;
@@ -157,7 +157,7 @@
     margin: 0 30px;
 
     h1 {
-      top: -22px;
+      top: -42px;
     }
   }
 
@@ -178,11 +178,19 @@
     justify-content: space-around;
     padding: 20px 10px;
     gap: 10px;
+
     span {
       width: 40%;
       font-size: 14px;
     }
-  }  
+  }
+
+  .my_skills {
+
+    h1 {
+      top: -22px;
+    }
+  }
 }
 
 @media (max-width: 500px) {
@@ -196,9 +204,12 @@
 
   .contact_me {
     padding: 10px 0;
-    gap: 0;    img {
+    gap: 0;
+
+    img {
       width: 50px;
-    }    
+    }
+
     span {
       font-size: 12px;
     }

@@ -3,8 +3,9 @@
 h1 {
     font-family: 'Syne';
     font-weight: 800;
-    font-size: clamp(32px, 3vw, 78px);
-    line-height: clamp(32px, 3vw, 78px);
+    margin: 0 30px;
+    font-size: clamp(24px, 6vw, 78px);
+    line-height: clamp(24px, 6vw, 78px);
     margin-bottom: 40px;
 
     &:hover {
