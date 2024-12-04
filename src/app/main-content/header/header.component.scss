@@ -41,14 +41,14 @@ h1 {
     width: 100%;
 
     >img {
-        width: 60%;
+        width: 50%;
     }
 
     >span {
         color: #00BC8F;
         font-weight: 700;
-        font-size: clamp(10px, 3vw, 48px);
-        line-height: clamp(10px, 3vw, 48px);
+        font-size: clamp(13px, 3vw, 48px);
+        line-height: clamp(13px, 3vw, 48px);
     }
 }
 
