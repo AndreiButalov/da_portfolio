@@ -7,31 +7,43 @@
                 <h2>Say hello! Let's discuss your ideas and make it happen</h2>
                 <form (ngSubmit)="onSubmit(contactForm, privacyCheckbox)" #contactForm="ngForm">
                     <div class="form_content">
-                        <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
-                            placeholder="Your name" required>
-                        <span *ngIf="!name.valid && name.touched" class="message">Please enter a name</span>
-
-                        <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text"
-                            placeholder="Your email" required
-                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-                        <span *ngIf="!email.valid && email.touched" class="message">Please enter an email</span>
-
-                        <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message"
-                            placeholder="Your message" required></textarea>
-                        <span *ngIf="!message.valid && message.touched" class="message">Please enter a message</span>
-
+                        <div class="contact_me_input">
+                            <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                                placeholder="Your name" required>
+                            <img *ngIf="!name.valid && name.touched" src="/assets/img/Vector!.png">
+                            <img *ngIf="name.valid" src="/assets/img/Vector (2).png">
+                            <span *ngIf="!name.valid && name.touched" class="message">Please enter a name</span>
+                        </div>                
+                        <div class="contact_me_input">
+                            <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text"
+                                placeholder="Your email" required
+                                pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            <img *ngIf="!email.valid && email.touched" src="/assets/img/Vector!.png">
+                            <img *ngIf="email.valid" src="/assets/img/Vector (2).png">
+                            <span *ngIf="!email.valid && email.touched" class="message">Please enter an email</span>
+                        </div>                
+                        <div class="contact_me_textarea">
+                            <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message"
+                                placeholder="Your message" required></textarea>
+                            <img *ngIf="!message.valid && message.touched" src="/assets/img/Vector!.png">
+                            <img *ngIf="message.valid" src="/assets/img/Vector (2).png">
+                            <span *ngIf="!message.valid && message.touched" class="message">Please enter a message</span>
+                        </div>                
                         <div class="check_box">
                             <label for="privacy-checkbox" class="custom-checkbox">
                                 <input type="checkbox" id="privacy-checkbox" [(ngModel)]="acceptPrivacyPolicy"
                                     #privacyCheckbox="ngModel" name="privacyPolicy" required>
                                 <span class="checkbox-indicator"></span>
-                            </label>
-                            <span>I've read the <a href="privacy_policy" class="privacy-link">privacy policy</a> and agree to the processing
+                            </label>                            
+                            <span>I've read the <a href="privacy_policy" class="privacy-link">privacy policy</a> and
+                                agree to the processing
                                 of my data as outlined.</span>
                         </div>
                         <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">Please accept the
                             privacy policy</span>
                     </div>
+                
+                    <!-- Submit Button -->
                     <button type="submit" class="send_message" [ngStyle]="{
                         'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
                         'border': acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
@@ -39,6 +51,7 @@
                         Send message
                     </button>
                 </form>
+                
 
             </div>
             <a href=""><img class="logo" src="/assets/img/logoW.png"></a>
