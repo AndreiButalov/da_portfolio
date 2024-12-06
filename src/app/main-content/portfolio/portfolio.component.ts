@@ -15,7 +15,7 @@ export class PortfolioComponent {
   projektsPortfolio = [
     {
       name: 'Join',
-      image: '/assets/img/join.png',
+      image: 'assets/img/join.png',
       index: '01/04',
       language: 'Angular | TypeScript | HTML | CSS | Firebase',
       link: 'https://github.com/AndreiButalov/join',
@@ -24,7 +24,7 @@ export class PortfolioComponent {
     },
     {
       name: 'Sharkie',
-      image: '/assets/img/sharkie.png',
+      image: 'assets/img/sharkie.png',
       index: '02/04',
       language: 'JavaScript | HTML | CSS',
       link: 'https://github.com/AndreiButalov/sharkie_game',
@@ -33,7 +33,7 @@ export class PortfolioComponent {
     },
     {
       name: 'DABubble',
-      image: '/assets/img/bubble.png',
+      image: 'assets/img/bubble.png',
       index: '03/04',
       language: 'Andular | TypeScript | Firebase',
       link: '',
@@ -42,7 +42,7 @@ export class PortfolioComponent {
     },
     {
       name: 'Pokedex',
-      image: '/assets/img/pokemon.png',
+      image: 'assets/img/pokemon.png',
       index: '04/04',
       language: 'JavaScript | HTML | CSS | Api',
       link: 'https://github.com/AndreiButalov/Pokemon-Wiki',

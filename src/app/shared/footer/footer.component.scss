@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url("/assets/img/Rectangle 5 (1).png");
+    background-image: url("./../../../assets/img/Rectangle 5 (1).png");
     background-size: cover;
     justify-content: space-between;
     position: relative;
@@ -175,16 +175,14 @@
     }
 }
 
-
 .contact_me_input input:focus,
 .contact_me_textarea textarea:focus {
-    background-color: black; /* Hintergrund bleibt schwarz auch bei Fokus */
-    // border-color: #fff;      /* Optional: Randfarbe ändern, wenn fokussiert */
+    background-color: black;
 }
 
 .contact_me_input input:valid,
 .contact_me_textarea textarea:valid {
-    background-color: black; /* Hintergrund bleibt schwarz auch bei gültiger Eingabe */
+    background-color: black;
 }
 
 .custom-checkbox {

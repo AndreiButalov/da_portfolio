@@ -13,16 +13,16 @@ import { CommonModule } from '@angular/common';
 export class MySkillsComponent {
  
   mySkills = [
-    { name: "Angular", icon: "/assets/img/Angular.png"},
-    { name: "TypeScript", icon: "/assets/img/Vector.png"},
-    { name: "JavaScript", icon: "/assets/img/Javascript.png"},
-    { name: "HTML", icon: "/assets/img/html.png"},
-    { name: "CSS", icon: "/assets/img/Vector (1).png"},
-    { name: "Firebase", icon: "/assets/img/Firebase.png"},
-    { name: "Git", icon: "/assets/img/git.png"},
-    { name: "Scrum", icon: "/assets/img/scrum.png"},
-    { name: "Rest-Api", icon: "/assets/img/api.png"},
-    { name: "Material Design", icon: "/assets/img/Group.png"}
+    { name: "Angular", icon: "assets/img/Angular.png"},
+    { name: "TypeScript", icon: "assets/img/Vector.png"},
+    { name: "JavaScript", icon: "assets/img/Javascript.png"},
+    { name: "HTML", icon: "assets/img/html.png"},
+    { name: "CSS", icon: "assets/img/Vector (1).png"},
+    { name: "Firebase", icon: "assets/img/Firebase.png"},
+    { name: "Git", icon: "assets/img/git.png"},
+    { name: "Scrum", icon: "assets/img/scrum.png"},
+    { name: "Rest-Api", icon: "assets/img/api.png"},
+    { name: "Material Design", icon: "assets/img/Group.png"}
   ]
   
 }
