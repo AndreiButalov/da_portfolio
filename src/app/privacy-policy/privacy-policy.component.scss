@@ -1,11 +1,25 @@
 .privacy_policy {
     display: flex;
     align-items: center;
-    align-items: center;justify-content: center;
+    justify-content: center;
 }
 
 .privacy_policy_content {
     max-width: 1440px;
     width: 100%;
     padding: 200px 100px;
+}
+
+
+@media (max-width: 1200px) {
+    .privacy_policy_content {
+        padding: 200px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .privacy_policy_content {
+        word-wrap: break-word;
+        width: 80%;
+    }
 }
