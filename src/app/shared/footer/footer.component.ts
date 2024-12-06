@@ -27,8 +27,8 @@ export class FooterComponent {
 
   mailTest = true;
 
-  acceptPrivacyPolicy: boolean = false; // Bindet den Zustand der Checkbox
-  showPrivacyError: boolean = false; // Steuert die Anzeige der Fehlermeldung
+  acceptPrivacyPolicy: boolean = false;
+  showPrivacyError: boolean = false;
 
   post = {
     endPoint: 'https://deineDomain.de/sendMail.php',
@@ -41,37 +41,35 @@ export class FooterComponent {
     },
   };
 
-  //   onSubmit(ngForm: NgForm) {
-  //     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-  //       this.http.post(this.post.endPoint, this.post.body(this.contactData))
-  //         .subscribe({
-  //           next: (response) => {
 
-  //             ngForm.resetForm();            
-  //           },
-  //           error: (error) => {
-  //             console.error(error);
-  //           },
-  //           complete: () => console.info('send post complete'),
-  //         });
-  //     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
-  //       ngForm.resetForm();
-  //     }
-  //   }
-
-  onSubmit(ngForm: NgForm, privacyCheckbox: any) {
+  onSubmit(ngForm: NgForm) {
     if (!this.acceptPrivacyPolicy) {
       this.showPrivacyError = true;
       return;
     } else {
       this.showPrivacyError = false;
     }
-
-    if (ngForm.valid) {
-      console.log('Form submitted:', this.contactData);
-      ngForm.resetForm();
-      this.acceptPrivacyPolicy = false; // Reset der Checkbox nach dem Senden
+  
+   
+    if (ngForm.submitted && ngForm.form.valid) {
+      if (!this.mailTest) {
+        this.http.post(this.post.endPoint, this.post.body(this.contactData))
+          .subscribe({
+            next: (response) => {
+              console.log('Mail sent successfully:', response);
+              ngForm.resetForm();
+              this.acceptPrivacyPolicy = false;
+            },
+            error: (error) => {
+              console.error('Error sending mail:', error);
+            },
+            complete: () => console.info('Mail sending process complete'),
+          });
+      } else {
+        console.log('Mail test enabled - Simulated form submission:', this.contactData);
+        ngForm.resetForm();
+        this.acceptPrivacyPolicy = false;
+      }
     }
-  }
+  }  
 }

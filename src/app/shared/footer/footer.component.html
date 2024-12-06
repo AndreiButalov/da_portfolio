@@ -5,7 +5,7 @@
             <div id="contact_me" class="formular">
                 <h1>Want to discuss a new project?</h1>
                 <h2>Say hello! Let's discuss your ideas and make it happen</h2>
-                <form (ngSubmit)="onSubmit(contactForm, privacyCheckbox)" #contactForm="ngForm">
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="form_content">
                         <div class="contact_me_input">
                             <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
@@ -23,7 +23,7 @@
                             <span *ngIf="!email.valid && email.touched" class="message">Please enter an email</span>
                         </div>                
                         <div class="contact_me_textarea">
-                            <textarea #message="ngModel" minlength="5" [(ngModel)]="contactData.message" name="message"
+                            <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
                                 placeholder="Your message" required></textarea>
                             <img *ngIf="!message.valid && message.touched" src="/assets/img/Vector!.png">
                             <img *ngIf="message.valid" src="/assets/img/Vector (2).png">
@@ -41,9 +41,7 @@
                         </div>
                         <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">Please accept the
                             privacy policy</span>
-                    </div>
-                
-                    <!-- Submit Button -->
+                    </div>               
                     <button type="submit" class="send_message" [ngStyle]="{
                         'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
                         'border': acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
@@ -51,8 +49,6 @@
                         Send message
                     </button>
                 </form>
-                
-
             </div>
             <a href=""><img class="logo" src="/assets/img/logoW.png"></a>
             <a class="arrow_up" href=""><img class="arrow" src="/assets/img/7. arrow.png"></a>
@@ -61,7 +57,7 @@
             <span class="email">&#169; Andrei Butalov 2024</span>
             <div class="social_medien">
                 <a href="https://github.com/AndreiButalov" target="_blank"><img src="/assets/img/github.png"></a>
-                <a href=""><img src="/assets/img/mail.png"></a>
+                <a href='mailto:andrei.butalov@gmx.de'><img src="/assets/img/mail.png"></a>
             </div>
         </div>
         <a class="legal_notice" href="imprint">Legal notice</a>
