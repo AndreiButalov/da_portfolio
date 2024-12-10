@@ -24,14 +24,13 @@ export class FooterComponent {
     message: '',
   }
 
-
-  mailTest = true;
+  mailTest = false;
 
   acceptPrivacyPolicy: boolean = false;
   showPrivacyError: boolean = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://andrei-butalov.de/angular-projects/da_portfolio/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -41,7 +40,6 @@ export class FooterComponent {
     },
   };
 
-
   onSubmit(ngForm: NgForm) {
     if (!this.acceptPrivacyPolicy) {
       this.showPrivacyError = true;
@@ -49,21 +47,21 @@ export class FooterComponent {
     } else {
       this.showPrivacyError = false;
     }
-  
-   
+
+
     if (ngForm.submitted && ngForm.form.valid) {
       if (!this.mailTest) {
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
-              console.log('Mail sent successfully:', response);
+              // console.log('Mail sent successfully:', response);
               ngForm.resetForm();
               this.acceptPrivacyPolicy = false;
             },
             error: (error) => {
               console.error('Error sending mail:', error);
             },
-            complete: () => console.info('Mail sending process complete'),
+            // complete: () => console.info('Mail sending process complete'),
           });
       } else {
         console.log('Mail test enabled - Simulated form submission:', this.contactData);
@@ -71,5 +69,5 @@ export class FooterComponent {
         this.acceptPrivacyPolicy = false;
       }
     }
-  }  
+  }    
 }
