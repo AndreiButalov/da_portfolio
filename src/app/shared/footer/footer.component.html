@@ -4,7 +4,10 @@
         <div *ngIf="showContactForm" class="contact_me_content">
             <div id="contact_me" class="formular">
                 <h1>Want to discuss a new project?</h1>
-                <h2>Say hello! Let's discuss your ideas and make it happen</h2>
+                <h2>Say hello! Let's discuss your ideas and make it happen</h2>                
+                <div *ngIf="showSuccessMessage" class="success-popup">
+                    <span class="success_popup_message">Your message has been sent successfully.</span>
+                </div>
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="form_content">
                         <div class="contact_me_input">

@@ -28,6 +28,7 @@ export class FooterComponent {
 
   acceptPrivacyPolicy: boolean = false;
   showPrivacyError: boolean = false;
+  showSuccessMessage: boolean = false;
 
   post = {
     endPoint: 'https://andrei-butalov.de/angular-projects/da_portfolio/sendMail.php',
@@ -48,20 +49,18 @@ export class FooterComponent {
       this.showPrivacyError = false;
     }
 
-
     if (ngForm.submitted && ngForm.form.valid) {
       if (!this.mailTest) {
         this.http.post(this.post.endPoint, this.post.body(this.contactData))
           .subscribe({
             next: (response) => {
-              // console.log('Mail sent successfully:', response);
+              this.displaySuccessMessage();
               ngForm.resetForm();
               this.acceptPrivacyPolicy = false;
             },
             error: (error) => {
               console.error('Error sending mail:', error);
             },
-            // complete: () => console.info('Mail sending process complete'),
           });
       } else {
         console.log('Mail test enabled - Simulated form submission:', this.contactData);
@@ -70,4 +69,12 @@ export class FooterComponent {
       }
     }
   }    
+  
+
+  displaySuccessMessage() {
+    this.showSuccessMessage = true;
+    setTimeout(() => {
+      this.showSuccessMessage = false;
+    }, 3000); 
+  }
 }
