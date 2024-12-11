@@ -30,7 +30,7 @@
 
     img {
         width: 30px;
-        height: auto;
+        height: 30px;
         cursor: pointer;
         transition: transform 0.3s ease;
     }
@@ -42,9 +42,14 @@
 
     div {
         display: flex;
-        align-items: end;
         gap: 50px;
     }
+}
+
+.flagge {
+    border: 1px #FFFCF3 solid;
+    border-radius: 50px;
+    object-fit: cover;
 }
 
 .success-popup {
@@ -56,25 +61,25 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     transform: translateY(20px);
-    animation: fadeInOut 5.5s ease forwards; // Run fadeInOut animation
+    animation: fadeInOut 5.5s ease forwards;
 }
 
 @keyframes fadeInOut {
     0% {
         opacity: 0;
-        transform: translateY(20px); // Starts slightly below
+        transform: translateY(20px);
     }
     10% {
         opacity: 1;
-        transform: translateY(0); // Moves into position
+        transform: translateY(0);
     }
     90% {
         opacity: 1;
-        transform: translateY(0); // Stays in position
+        transform: translateY(0);
     }
     100% {
         opacity: 0;
-        transform: translateY(20px); // Fades out and moves down
+        transform: translateY(20px);
     }
 }
 
@@ -83,7 +88,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    font-size: clamp(14px, 3vw, 22px);
     border: solid 3px #FFFCF3;
     color: #FFFCF3;
     top: 50%;
@@ -93,6 +98,8 @@
     width: 20%;
     height: 20%;
     border-radius: 10px;
+    word-wrap: break-word;
+    padding: 0 30px;
 }
 
 @keyframes moveUp {

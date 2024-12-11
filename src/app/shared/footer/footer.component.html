@@ -3,8 +3,10 @@
         <img src="assets/img/Say Hi!.png">
         <div *ngIf="showContactForm" class="contact_me_content">
             <div id="contact_me" class="formular">
-                <h1>Want to discuss a new project?</h1>
-                <h2>Say hello! Let's discuss your ideas and make it happen</h2>                
+                 <h1>
+                    {{ isEnglish ? "Want to discuss a new project?" : "Möchtest du ein neues Projekt besprechen?" }}
+                 </h1>                
+                <h2>{{ isEnglish ? "Say hello! Let's discuss your ideas and make it happen" : "Hallo! Lass uns über deine Ideen sprechen und sie verwirklichen" }}</h2>                
                 <div *ngIf="showSuccessMessage" class="success-popup">
                     <span class="success_popup_message">Your message has been sent successfully.</span>
                 </div>
@@ -37,10 +39,12 @@
                                 <input type="checkbox" id="privacy-checkbox" [(ngModel)]="acceptPrivacyPolicy"
                                     #privacyCheckbox="ngModel" name="privacyPolicy" required>
                                 <span class="checkbox-indicator"></span>
-                            </label>                            
-                            <span>I've read the <a href="privacy_policy" class="privacy-link">privacy policy</a> and
-                                agree to the processing
-                                of my data as outlined.</span>
+                            </label>                          
+                            <span>
+                                {{ isEnglish ? "I've read the "  : "Ich habe das gelesen" }}
+                                <a href="privacy_policy" class="privacy-link">{{ isEnglish ? "privacy policy"  : "Datenschutzerklärung" }}</a>
+                                {{ isEnglish ? "and agree to the processing of my data as outlined."  : "und stimme der Verarbeitung meiner Daten wie beschrieben zu." }}
+                            </span>    
                         </div>
                         <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">Please accept the
                             privacy policy</span>
@@ -61,8 +65,9 @@
             <div class="social_medien">
                 <a href="https://github.com/AndreiButalov" target="_blank"><img src="assets/img/github.png"></a>
                 <a href='mailto:andrei.butalov@gmx.de'><img src="assets/img/mail.png"></a>
+                <img class="flagge" [src]="flagSrc" (click)="toggleLanguage()">
             </div>
         </div>
-        <a class="legal_notice" href="imprint">Legal notice</a>
+        <a class="legal_notice" href="imprint">{{ isEnglish ? "Legal notice"  : "Impressum" }}</a>
     </div>
 </div>

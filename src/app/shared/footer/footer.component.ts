@@ -2,6 +2,7 @@ import { Component, inject, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { LanguageService } from '../language/language.component';
 
 @Component({
   selector: 'app-footer',
@@ -9,12 +10,28 @@ import { HttpClient } from '@angular/common/http';
   imports: [
     CommonModule,
     FormsModule,
+    LanguageService
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
   @Input() showContactForm: boolean = false;
+
+  flagSrc: string = 'assets/img/pngwing.com.png';
+
+  constructor(private languageService: LanguageService) { }
+
+  toggleLanguage() {
+    this.languageService.toggleLanguage();
+    this.flagSrc = this.languageService.getLanguage()
+      ? 'assets/img/pngwing.com.png'
+      : 'assets/img/englisch.png';
+  }
+
+  get isEnglish(): boolean {
+    return this.languageService.getLanguage();
+  }
 
   http = inject(HttpClient);
 
@@ -68,13 +85,13 @@ export class FooterComponent {
         this.acceptPrivacyPolicy = false;
       }
     }
-  }    
-  
+  }
+
 
   displaySuccessMessage() {
     this.showSuccessMessage = true;
     setTimeout(() => {
       this.showSuccessMessage = false;
-    }, 3000); 
+    }, 3000);
   }
 }
