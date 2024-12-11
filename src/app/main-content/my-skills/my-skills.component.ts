@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../shared/language/language.component';
 
 @Component({
   selector: 'app-my-skills',
@@ -12,6 +13,12 @@ import { CommonModule } from '@angular/common';
 })
 export class MySkillsComponent {
  
+  constructor(private languageService: LanguageService) { }
+
+  get isEnglish(): boolean {
+    return this.languageService.getLanguage();
+  }
+
   mySkills = [
     { name: "Angular", icon: "assets/img/Angular.png"},
     { name: "TypeScript", icon: "assets/img/Vector.png"},

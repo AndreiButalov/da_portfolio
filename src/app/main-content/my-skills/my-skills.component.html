@@ -1,6 +1,6 @@
 <div class="my_skills">
     <div class="arrow_section">
-        <a href="#my_skills"><img src="assets/img/Group4.png"></a>            
+        <a href="#my_skills"><img src="assets/img/Group4.png"></a>
     </div>
     <div class="my_skills_content">
         <h1>My skills</h1>
@@ -8,7 +8,7 @@
             @for (item of mySkills; track item.name) {
             <div class="my_skills_icon">
                 <img class="icon_animation" src="{{ item.icon }}">
-                <span>{{ item.name }}</span> 
+                <span>{{ item.name }}</span>
             </div>
             }
         </div>
@@ -16,7 +16,11 @@
             <div>
                 <img class="icon_animation" src="assets/img/18. Icons s3.png">
             </div>
-            <span>Don't see the skill you need? <a href="#contact_me">Contact me</a> I'm Always Ready to learn!</span>
+            <span>
+                {{ isEnglish ? "Don't see the skill you need?" : "Sie finden nicht die benötigte Fähigkeit?" }}
+                <a href="#contact_me">Contact me</a>
+                {{ isEnglish ? "I'm Always Ready to learn!" : "Ich bin immer bereit zu lernen!" }}
+            </span>
         </div>
     </div>
 </div>
