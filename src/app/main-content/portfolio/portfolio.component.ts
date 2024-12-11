@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '../../shared/language/language.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,6 +12,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+
+  constructor(private languageService: LanguageService) { }
+
+  get isEnglish(): boolean {
+    return this.languageService.getLanguage();
+  }
 
   projektsPortfolio = [
     {

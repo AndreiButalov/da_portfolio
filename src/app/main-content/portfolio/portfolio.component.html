@@ -5,8 +5,8 @@
     <div class="portfolio">
         <h1 >Portfolio</h1>
         <div class="portfolio_content_text">
-            <h2>Explore a selection of my work here - Interact with</h2>
-            <h2>project to see my skills in action.</h2>
+            <h2>{{ isEnglish ? "Explore a selection of my work here - Interact with" : "Entdecken Sie eine Auswahl meiner Arbeiten hier - Interagieren Sie mit" }}</h2>
+            <h2>{{ isEnglish ? "project to see my skills in action" : "dem Projekt, um meine Fähigkeiten in Aktion zu sehen." }}</h2>
         </div>
     
         @for (item of projektsPortfolio; track item.index) {
