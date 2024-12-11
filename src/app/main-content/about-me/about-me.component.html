@@ -1,13 +1,17 @@
 <div class="about_me">
     <div style="position: relative;">
-        <h1>About me</h1>
+        <h1>
+            {{isEnglish ? "About me" : "Über mich"}}
+        </h1>
         <div class="about_me_content">
             <div class="about_me_left">
-                <span>I’m a front-end developer based in Cologne, Germany, helping designers and companies turn their ideas into reality. With creativity and logical thinking, I transform concepts into high-quality products. If you think I’d be a great fit for your project, feel free to get in touch!</span>
+                <span>
+                    {{ isEnglish ? aboutMeEn : aboutMeDe }}
+                </span>
                 <div class="about_me_address">
                     <div>
                         <img src="assets/img/house.png">
-                        <span>Based in Cologne</span>
+                        <span>Based in Kerpen</span>
                     </div>
                     <div>
                         <img src="assets/img/laptop_chromebook.png">
@@ -15,7 +19,7 @@
                     </div>
                 </div>
                 <div class="about_me_button">
-                    <a href="#" class="button_group">Let's talk</a>
+                    <a href="#footer" class="button_group">{{ isEnglish ? "Let's talk" : "Lass uns reden" }}</a>
                 </div>
             </div>
             <div class="foto_wrapper">
