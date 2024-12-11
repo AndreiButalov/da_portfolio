@@ -1,14 +1,19 @@
 <div class="references_content">
     <div class="references">
-        <h1>References</h1>
-        <h2>I thrive both independently and part of a team. Here's what my colleagues have to say about working with me.</h2>
+        <h1>
+            {{ isEnglish ? "References" : "Referenzen" }}
+         </h1>
+        <h2>
+            {{ isEnglish ? "I thrive both independently and part of a team. Here's what my colleagues have to say about working with me." : 
+            "Ich gedeihe sowohl eigenständig als auch als Teil eines Teams. Hier ist, was meine Kollegen über die Zusammenarbeit mit mir sagen." }}
+         </h2>
         <div class="references_assessment">
             @for (item of references; track $index) {
                 <div>
                     <img src="{{ item.image }}">
                     <h1>{{ item.name }}</h1>
                     <span>{{ item.status }}</span>
-                    <p>{{ item.description }}</p>
+                    <p>{{ isEnglish ? item.description : item.descriptionDe }}</p>
                 </div>
             }
         </div>

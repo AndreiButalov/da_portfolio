@@ -20,17 +20,23 @@ export class FooterComponent {
 
   flagSrc: string = 'assets/img/pngwing.com.png';
 
-  constructor(private languageService: LanguageService) { }
+  constructor(private languageService: LanguageService) {
+    this.setFlagImage();
+  }
 
   toggleLanguage() {
     this.languageService.toggleLanguage();
-    this.flagSrc = this.languageService.getLanguage()
-      ? 'assets/img/pngwing.com.png'
-      : 'assets/img/englisch.png';
+    this.setFlagImage();
   }
 
   get isEnglish(): boolean {
     return this.languageService.getLanguage();
+  }
+
+  private setFlagImage() {
+    this.flagSrc = this.languageService.getLanguage()
+      ? 'assets/img/pngwing.com.png'
+      : 'assets/img/englisch.png';
   }
 
   http = inject(HttpClient);
