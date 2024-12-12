@@ -16,25 +16,31 @@
                     <div class="form_content">
                         <div class="contact_me_input">
                             <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
-                                placeholder="Your name" required>
+                                placeholder="{{ isEnglish ? 'Your Name' : 'Ihr Name' }}" required>
                             <img *ngIf="!name.valid && name.touched" src="assets/img/Vector!.png">
                             <img *ngIf="name.valid" src="assets/img/Vector (2).png">
-                            <span *ngIf="!name.valid && name.touched" class="message">Please enter a name</span>
+                            <span *ngIf="!name.valid && name.touched" class="message">
+                                {{ isEnglish ? "Please enter a name" : "Bitte geben Sie einen Namen ein" }}
+                            </span>
                         </div>                
                         <div class="contact_me_input">
                             <input #email="ngModel" [(ngModel)]="contactData.email" name="email" type="text"
-                                placeholder="Your email" required
+                                placeholder="{{ isEnglish ? 'Your email' : 'Ihre E-mail' }}" required
                                 pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                             <img *ngIf="!email.valid && email.touched" src="assets/img/Vector!.png">
                             <img *ngIf="email.valid" src="assets/img/Vector (2).png">
-                            <span *ngIf="!email.valid && email.touched" class="message">Please enter an email</span>
+                            <span *ngIf="!email.valid && email.touched" class="message">
+                                {{ isEnglish ? "Please enter a email" : "Bitte geben Sie eine E-mail ein" }}
+                            </span>
                         </div>                
                         <div class="contact_me_textarea">
                             <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
-                                placeholder="Your message" required></textarea>
+                                placeholder="{{ isEnglish ? 'Your message' : 'Ihre Nachricht' }}" required></textarea>
                             <img *ngIf="!message.valid && message.touched" src="assets/img/Vector!.png">
                             <img *ngIf="message.valid" src="assets/img/Vector (2).png">
-                            <span *ngIf="!message.valid && message.touched" class="message">Please enter a message</span>
+                            <span *ngIf="!message.valid && message.touched" class="message">
+                                {{ isEnglish ? "Please enter a message" : "Bitte geben Sie eine Nachricht ein" }}
+                            </span>
                         </div>                
                         <div class="check_box">
                             <label for="privacy-checkbox" class="custom-checkbox">
@@ -55,7 +61,7 @@
                         'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
                         'border': acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
                     }">
-                        Send message
+                        {{ isEnglish ? "Send message" : "Nachricht senden" }}
                     </button>
                 </form>
             </div>

@@ -24,7 +24,9 @@
                     </div>
                     <div class="links_group">
                         <a href="{{ item.link }}" target="_blank" class="button_group">Github</a>
-                        <a href="{{ item.tryLink }}" target="_blank" class="button_group">Try</a>
+                        <a href="{{ item.tryLink }}" target="_blank" class="button_group">
+                            {{ isEnglish ? "Try" :  "Versuchen" }}
+                        </a>
                     </div>
                 </div>
             </div>

@@ -11,11 +11,16 @@
                 <div class="about_me_address">
                     <div>
                         <img src="assets/img/house.png">
-                        <span>Based in Kerpen</span>
+                        <span>
+                            {{ isEnglish ? "Based in Kerpen" : "Ansässig in Kerpen" }}
+                        </span>
+
                     </div>
                     <div>
                         <img src="assets/img/laptop_chromebook.png">
-                        <span>Open to work Remote</span>
+                        <span>
+                            {{ isEnglish ? "Open to work Remote" : "Offen für Remote-Arbeit" }}
+                        </span>
                     </div>
                 </div>
                 <div class="about_me_button">

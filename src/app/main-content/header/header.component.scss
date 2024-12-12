@@ -109,11 +109,11 @@ h1 {
 
     @-webkit-keyframes fade_move_down {
         0% {
-            -webkit-transform: translate(0, -100px);
+            -webkit-transform: translate(0, -90px);
         }
 
         25% {
-            -webkit-transform: translate(0, -100px);
+            -webkit-transform: translate(0, -90px);
         }
 
         50% {
@@ -121,13 +121,13 @@ h1 {
         }
 
         100% {
-            -webkit-transform: translate(0, 100px);
+            -webkit-transform: translate(0, 90px);
         }
     }
 
     @-moz-keyframes fade_move_down {
         0% {
-            -moz-transform: translate(0, -100px);
+            -moz-transform: translate(0, -90px);
         }
 
         50% {
@@ -135,13 +135,13 @@ h1 {
         }
 
         100% {
-            -moz-transform: translate(0, 100px);
+            -moz-transform: translate(0, 90px);
         }
     }
 
     @keyframes fade_move_down {
         0% {
-            transform: translate(0, -100px);
+            transform: translate(0, -90px);
         }
 
         50% {
@@ -149,7 +149,7 @@ h1 {
         }
 
         100% {
-            transform: translate(0, 100px);
+            transform: translate(0, 90px);
             opacity: 0;
         }
     } 
