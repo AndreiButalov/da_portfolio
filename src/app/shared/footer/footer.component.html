@@ -54,8 +54,9 @@
                                 {{ isEnglish ? "and agree to the processing of my data as outlined."  : "und stimme der Verarbeitung meiner Daten wie beschrieben zu." }}
                             </span>    
                         </div>
-                        <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">Please accept the
-                            privacy policy</span>
+                        <span *ngIf="!acceptPrivacyPolicy && showPrivacyError" class="privacy_policy">
+                            {{ isEnglish ? "Please accept the privacy policy" : "Bitte akzeptieren Sie die Datenschutzrichtlinie" }}
+                        </span>
                     </div>               
                     <button type="submit" class="send_message" [ngStyle]="{
                         'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
