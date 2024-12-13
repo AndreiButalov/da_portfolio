@@ -1,19 +1,26 @@
 <div class="imprint_content">
-    <div class='imprint'>
-        <h1>{{ isEnglish ? "Imprint" : "Impressum" }}</h1>
-        <p>Angaben gemäß § 5 DDG</p>
-        <p>Andrei Butalov <br>
-            Nordstraße 44<br>
-            50170 Kerpen <br>
-        </p>
-        <p> <strong>Vertreten durch: </strong><br>
-            Andrei Butalov<br>
-        </p>
-        <p><strong>Kontakt:</strong> <br>
-            Telefon: 0162-3429332<br>
-            E-Mail: <a href='mailto:andrei.butalov@gmx.de'>andrei.butalov&#64;gmx.de</a></p>
-    </div>
-    <div class="footer">
-        <app-footer [showContactForm]="false" [showLanguage]="true"></app-footer>
-    </div>
+  <div class="imprint">
+    <h1>{{ isEnglish ? "Imprint" : "Impressum" }}</h1>
+    <p>
+      {{
+        isEnglish ? "Information pursuant to § 5 DDG" : "Angaben gemäß § 5 DDG"
+      }}
+    </p>
+    <p>Andrei Butalov</p>
+    <p>{{ isEnglish ? "North Street" : "Nordstraße"}}</p>
+    <p>50170 Kerpen</p>
+    <p>
+      <strong>{{ isEnglish ? "Represented by:" : " Vertreten durch:"}} </strong><br />
+      Andrei Butalov<br />
+    </p>
+    <p>
+      <strong>{{ isEnglish ? "Contact" : "Kontakt"}}</strong> <br />
+      Telefon: 0162-3429332<br />
+      E-Mail:
+      <a href="mailto:andrei.butalov@gmx.de">andrei.butalov&#64;gmx.de</a>
+    </p>
+  </div>
+  <div class="footer">
+    <app-footer [showContactForm]="false" [showLanguage]="true"></app-footer>
+  </div>
 </div>
