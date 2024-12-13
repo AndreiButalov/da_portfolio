@@ -17,6 +17,7 @@ import { LanguageService } from '../language/language.component';
 })
 export class FooterComponent {
   @Input() showContactForm: boolean = false;
+  @Input() showLanguage: boolean = false;
 
   flagSrc: string = 'assets/img/pngwing.com.png';
 

@@ -74,7 +74,7 @@
             <div class="social_medien">
                 <a href="https://github.com/AndreiButalov" target="_blank"><img src="assets/img/github.png"></a>
                 <a href='mailto:andrei.butalov@gmx.de'><img src="assets/img/mail.png"></a>
-                <img class="flagge" [src]="flagSrc" (click)="toggleLanguage()">
+                <img *ngIf="showLanguage" class="flagge" [src]="flagSrc" (click)="toggleLanguage()">
             </div>
         </div>
         <a class="legal_notice" href="imprint">{{ isEnglish ? "Legal notice"  : "Impressum" }}</a>
