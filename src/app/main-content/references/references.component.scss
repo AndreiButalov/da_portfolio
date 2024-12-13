@@ -81,47 +81,6 @@
     }
 }
 
-.arrow_section {
-    width: 100%;
-    max-width: 1440px;
-    display: flex;
-    justify-content: end;
-    align-items: start;
-    height: 300px;
-
-    img {
-        height: 216px;
-        width: auto;
-        cursor: pointer;
-    }
-
-    &:hover {
-
-        img {
-            animation: fade_move_down 1.25s ease-in-out infinite;
-        }
-
-        @keyframes fade_move_down {
-            0% {
-                transform: translate(0, 0);
-            }
-
-            25% {
-                transform: scale(1.2);
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translate(-70px, 100px);
-                opacity: 0;
-            }
-        }
-    }
-}
-
 @media (max-width: 1200px) {
     .references_content {
         margin: 50px 0 ;
