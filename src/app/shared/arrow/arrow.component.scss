@@ -6,69 +6,68 @@
   align-items: start;
   height: 300px;
 
-  &:hover {
-    img {
-      cursor: pointer;
-      animation: fade_move_down 1.25s ease-in-out infinite;
+  img {
+    height: 180px;
+    width: auto;
+    cursor: pointer;
+    animation: fade_move_down 1.8s ease-in-out infinite;
+  }
+
+  @keyframes fade_move_down {
+    0% {
+      transform: translate(0, 0);
     }
 
-    @keyframes fade_move_down {
-      0% {
-        transform: translate(0, 0);
-      }
+    25% {
+      transform: scale(1.2);
+    }
 
-      25% {
-        transform: scale(1.2);
-      }
+    50% {
+      opacity: 1;
+    }
 
-      50% {
-        opacity: 1;
-      }
-
-      100% {
-        transform: translate(-70px, 100px);
-        opacity: 0;
-      }
+    100% {
+      transform: translate(-70px, 100px);
+      opacity: 0;
     }
   }
 }
 
-
 .arrow_section_reverse {
-    max-width: 1440px;
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    height: 300px;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  height: 300px;
 
-    img {
-        height: 216px;
-        width: auto;
-        cursor: pointer;
-        transform: scaleX(-1);
-    }
+  img {
+    height: 180px;
+    width: auto;
+    cursor: pointer;
+    transform: scaleX(-1);
+  }
 }
 
-.arrow_section_reverse:hover img {
-    animation: fade_move_down_mirror 1.25s ease-in-out infinite;
+.arrow_section_reverse img {
+  animation: fade_move_down_mirror 1.25s ease-in-out infinite;
 }
 
 @keyframes fade_move_down_mirror {
-    0% {
-        transform: translate(0, 0) scaleX(-1);
-    }
+  0% {
+    transform: translate(0, 0) scaleX(-1);
+  }
 
-    25% {
-        transform: scale(1.2) scaleX(-1);
-    }
+  25% {
+    transform: scale(1.2) scaleX(-1);
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        transform: translate(70px, 100px) scaleX(-1);
-        opacity: 0;
-    }
+  100% {
+    transform: translate(70px, 100px) scaleX(-1);
+    opacity: 0;
+  }
 }
