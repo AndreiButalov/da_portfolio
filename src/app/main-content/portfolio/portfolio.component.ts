@@ -44,18 +44,18 @@ export class PortfolioComponent {
       descriptionDe: `Ein einfaches Jump-and-Run-Spiel basierend auf einem 
       objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.`
     },
-    {
-      name: 'DABubble',
-      image: 'assets/img/bubble.png',
-      index: '03/04',
-      language: 'Andular | TypeScript | Firebase',
-      link: '',
-      tryLink: '',
-      description: `This App is a Slack Clone App. It revolutionizes team communication 
-      and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
-      descriptionDe: `Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation 
-      und zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Messaging und einer leistungsstarken Kanalorganisation.`
-    },
+    // {
+    //   name: 'DABubble',
+    //   image: 'assets/img/bubble.png',
+    //   index: '03/04',
+    //   language: 'Andular | TypeScript | Firebase',
+    //   link: '',
+    //   tryLink: '',
+    //   description: `This App is a Slack Clone App. It revolutionizes team communication 
+    //   and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
+    //   descriptionDe: `Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation 
+    //   und zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Messaging und einer leistungsstarken Kanalorganisation.`
+    // },
     {
       name: 'Pokedex',
       image: 'assets/img/pokemon.png',

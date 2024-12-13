@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0 100px;
+    padding: 100px 100px 0;
 }
 
 .portfolio {
@@ -241,7 +241,7 @@
 
 @media (max-width: 1200px) {
     .portfolio_content {
-        padding: 0 30px;
+        padding: 100px 30px 0;
     }
 
     .projeckt_description {
