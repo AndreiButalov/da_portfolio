@@ -28,33 +28,34 @@ export class ReferencesComponent {
       image: 'assets/img/format_quote.png',
       name: 'Team Partner 1',
       status: 'Team Partner',
-      description: `Andrei really kept the togenther with his great organisation
-      and clear communication. We wouldn't have got this far without his commitment.`,
-      descriptionDe: `Andrei hat das Team mit seiner großartigen Organisation und
-      klarer Kommunikation zusammengehalten. Ohne sein Engagement wären wir nicht 
-      so weit gekommen.`
+      description: `Andrei is an extremely talented and reliable programmer. 
+      His ability to solve complex problems while communicating clearly has 
+      greatly advanced our team.`,
+      descriptionDe: `Andrei ist ein äußerst zuverlässiger und kompetenter Teamplayer. 
+      Seine Fähigkeit, komplexe Probleme schnell zu analysieren und effektive 
+      Lösungen zu finden, hat unser Team stets vorangebracht. Seine kommunikative 
+      und hilfsbereite Art macht die Zusammenarbeit angenehm und produktiv.`
     },
     {
       image: 'assets/img/format_quote.png',
       name: 'Team Partner 2',
       status: 'Team Partner',
-      description: `Andrei was a top team colleague at DA. His positive commitment 
-      and willingness to take on responsibility made a singnificant contribution 
-      tu us achieving our goals.`,
-      descriptionDe: `Andrei war ein hervorragender Teamkollege bei DA. Sein 
-      positives Engagement und die Bereitschaft, Verantwortung zu übernehmen, haben 
-      maßgeblich dazu beigetragen, dass wir unsere Ziele erreicht haben.`
+      description: `Working with Andrei was always effective and inspiring. 
+      His professionalism and dedication make him an indispensable team member.`,
+      descriptionDe: `Die Zusammenarbeit mit Andrei war stets effektiv und 
+      inspirierend. Seine Professionalität und sein Engagement machen ihn zu 
+      einem unverzichtbaren Teammitglied.`
     },
     {
       image: 'assets/img/format_quote.png',
       name: 'Team Partner 3',
       status: 'Team Partner',
-      description: `It was a great pleasure to work with Andrei. He knows how 
-      to push and encourage team members to present the best work possible, 
-      always adding something to brainstorm.`,
-      descriptionDe: `Es war eine große Freude, mit Andrei zu arbeiten. 
-      Er weiß, wie man Teammitglieder motiviert und dazu anregt, die besten 
-      Ergebnisse zu präsentieren, und trägt immer etwas zur Ideensammlung bei.`
+      description: `Andrei not only has technical expertise but also brings 
+      positive and motivating energy to the team. His cooperative nature makes 
+      implementing even the most challenging projects easier.`,
+      descriptionDe: `Andrei hat nicht nur technisches Fachwissen, sondern 
+      bringt auch eine positive und motivierende Energie ins Team. Seine 
+      kooperative Art erleichtert die Umsetzung selbst anspruchsvollster Projekte.`
     },
   ] 
     
