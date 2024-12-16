@@ -31,10 +31,9 @@ export class ReferencesComponent {
       description: `Andrei is an extremely talented and reliable programmer. 
       His ability to solve complex problems while communicating clearly has 
       greatly advanced our team.`,
-      descriptionDe: `Andrei ist ein äußerst zuverlässiger und kompetenter Teamplayer. 
-      Seine Fähigkeit, komplexe Probleme schnell zu analysieren und effektive 
-      Lösungen zu finden, hat unser Team stets vorangebracht. Seine kommunikative 
-      und hilfsbereite Art macht die Zusammenarbeit angenehm und produktiv.`
+      descriptionDe: `Andrei ist ein äußerst talentierter und zuverlässiger 
+      Programmierer. Seine Fähigkeit, komplexe Probleme zu lösen und dabei klar 
+      zu kommunizieren, hat unser Team enorm vorangebracht.`
     },
     {
       image: 'assets/img/format_quote.png',
