@@ -58,13 +58,14 @@
                             {{ isEnglish ? "Please accept the privacy policy" : "Bitte akzeptieren Sie die Datenschutzrichtlinie" }}
                         </span>
                     </div>               
-                    <button type="submit" class="send_message" [ngStyle]="{
-                        'color': acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
-                        'border': acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
+                    <button type="submit" class="send_message" [disabled]="!contactForm.valid || !acceptPrivacyPolicy" [ngStyle]="{
+                        'color': contactForm.valid && acceptPrivacyPolicy ? '#FFFCF3' : '#BBBBBB',
+                        'border': contactForm.valid && acceptPrivacyPolicy ? '4px solid #FFFCF3' : '4px solid #BBBBBB'
                     }">
                         {{ isEnglish ? "Send message" : "Nachricht senden" }}
                     </button>
                 </form>
+                
             </div>
             <a href=""><img class="logo" src="assets/img/logoW.png"></a>
             <a class="arrow_up" href=""><img class="arrow" src="assets/img/7. arrow.png"></a>
