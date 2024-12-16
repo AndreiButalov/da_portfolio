@@ -26,7 +26,7 @@ export class ReferencesComponent {
   references = [
     {
       image: 'assets/img/format_quote.png',
-      name: 'Team Partner 1',
+      name: 'David',
       status: 'Team Partner',
       description: `Andrei is an extremely talented and reliable programmer. 
       His ability to solve complex problems while communicating clearly has 
@@ -38,7 +38,7 @@ export class ReferencesComponent {
     },
     {
       image: 'assets/img/format_quote.png',
-      name: 'Team Partner 2',
+      name: 'Frank',
       status: 'Team Partner',
       description: `Working with Andrei was always effective and inspiring. 
       His professionalism and dedication make him an indispensable team member.`,
@@ -48,7 +48,7 @@ export class ReferencesComponent {
     },
     {
       image: 'assets/img/format_quote.png',
-      name: 'Team Partner 3',
+      name: 'Robert',
       status: 'Team Partner',
       description: `Andrei not only has technical expertise but also brings 
       positive and motivating energy to the team. His cooperative nature makes 
