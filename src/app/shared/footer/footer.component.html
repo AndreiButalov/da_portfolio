@@ -16,7 +16,7 @@
                     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                         <div class="form_content">
                             <div class="contact_me_input">
-                                <input #name="ngModel" [(ngModel)]="contactData.name" name="name" type="text"
+                                <input #name="ngModel" minlength="2" [(ngModel)]="contactData.name" name="name" type="text"
                                     placeholder="{{ isEnglish ? 'Your Name' : 'Ihr Name' }}" required>
                                 <img *ngIf="!name.valid && name.touched" src="assets/img/Vector!.png">
                                 <img *ngIf="name.valid" src="assets/img/Vector (2).png">
@@ -40,7 +40,7 @@
                                 <img *ngIf="!message.valid && message.touched" src="assets/img/Vector!.png">
                                 <img *ngIf="message.valid" src="assets/img/Vector (2).png">
                                 <span *ngIf="!message.valid && message.touched" class="message">
-                                    {{ isEnglish ? "Please enter a message" : "Bitte geben Sie eine Nachricht ein" }}
+                                    {{ isEnglish ? "Your input is too short. At least 4 characters are required" : "Ihre Eingabe ist zu kurz. Mindestens 4 Zeichen erforderlich" }}
                                 </span>
                             </div>                
                             <div class="check_box">
@@ -50,7 +50,7 @@
                                     <span class="checkbox-indicator"></span>
                                 </label>                          
                                 <span>
-                                    {{ isEnglish ? "I've read the "  : "Ich habe das gelesen" }}
+                                    {{ isEnglish ? "I've read the"  : "Ich habe das gelesen" }}
                                     <a href="privacy_policy" class="privacy-link">{{ isEnglish ? "privacy policy"  : "Datenschutzerklärung" }}</a>
                                     {{ isEnglish ? "and agree to the processing of my data as outlined."  : "und stimme der Verarbeitung meiner Daten wie beschrieben zu." }}
                                 </span>    
