@@ -1,18 +1,24 @@
 .footer_content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
 }
 
-.footer {
+.footer_background {
+    background-image: url("./../../../assets/img/Rectangle 5 (1).png");
+    background-size: cover;
     max-width: 1920px;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer {
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    background-image: url("./../../../assets/img/Rectangle 5 (1).png");
-    background-size: cover;
     justify-content: space-between;
     position: relative;
 
