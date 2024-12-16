@@ -7,9 +7,11 @@
         </div>
     
         @for (item of projektsPortfolio; track item.index) {
-            <div class="portfolio_projects {{ (item.index === '02/04' || item.index === '04/04') ? 'row-reverse' : '' }}">
+            <!-- <div class="portfolio_projects {{ (item.index === '02/04' || item.index === '04/04') ? 'row-reverse' : '' }}"> -->
+            <div class="portfolio_projects {{ (item.index === '02/04') ? 'row-reverse' : '' }}">
                 <img src="{{ item.image }}">
-                <span class="image_border {{ (item.index === '02/04' || item.index === '04/04') ? 'row-reverse left' : '' }}">
+                <!-- <span class="image_border {{ (item.index === '02/04' || item.index === '04/04') ? 'row-reverse left' : '' }}"> -->
+                <span class="image_border {{ (item.index === '02/04') ? 'row-reverse left' : '' }}">
                     <img src="assets/img/Group 8.png">
                 </span>
                 <div class="projeckt_description {{ (item.index === '02/04' || item.index === '04/04') ? 'text-align-start' : '' }}">
