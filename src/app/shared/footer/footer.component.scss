@@ -6,7 +6,7 @@
 .footer_background {
     background-image: url("./../../../assets/img/Rectangle 5 (1).png");
     background-size: cover;
-    
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom:  40px;
+    padding-bottom: 40px;
 
     img {
         width: 30px;
@@ -78,14 +78,17 @@
         opacity: 0;
         transform: translateY(20px);
     }
+
     10% {
         opacity: 1;
         transform: translateY(0);
     }
+
     90% {
         opacity: 1;
         transform: translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateY(20px);
@@ -135,7 +138,7 @@
     justify-content: center;
     color: white;
     text-align: center;
-    padding-top: 60px;    
+    padding-top: 60px;
     position: relative;
 
     h1 {
@@ -182,18 +185,30 @@
         color: #FFFCF3;
         background-color: black;
         line-height: 19.2px;
-        border: 0;
+        border: 2px solid black;
         border-bottom: 1px solid #FFFCF3;
         box-sizing: border-box;
         padding: 0 16px;
         font-size: 16px;
-        line-height: 19.2px;
         width: 100%;
-
-        &:hover {
-            border: 4px #FFFCF3 solid;
-        }
+        outline: none;
+        transition: box-shadow 0.2s ease, border-radius 0.2s ease;
     }
+
+    input:hover,
+    textarea:hover,
+    input:focus,
+    textarea:focus {
+        border: 2px solid #FFFCF3;
+        border-radius: 4px;
+    }
+
+    input:focus,
+    textarea:focus {
+        border: 1px solid #FFFCF3;
+        border-radius: 4px;
+    }
+
 
     input {
         height: 50px;
@@ -206,7 +221,7 @@
         -webkit-text-fill-color: #FFFCF3 !important;
         box-shadow: 0 0 0px 1000px black inset !important;
     }
-    
+
     textarea {
         height: 200px;
         padding-top: 10px;
@@ -225,11 +240,13 @@
                 font-weight: 700;
             }
         }
-    }    
+    }
 }
 
-.contact_me_input, .contact_me_textarea {
+.contact_me_input,
+.contact_me_textarea {
     position: relative;
+
     img {
         width: 25px;
         height: 25px;
@@ -374,7 +391,7 @@
     }
 
     .logo {
-        bottom: -160px;        
+        bottom: -160px;
     }
 
     .infos_about_me {
@@ -405,8 +422,8 @@
 
     .send_message {
         padding: 10px 40px;
-        font-size: 14px;        
-    }   
+        font-size: 14px;
+    }
 
     .footer {
         padding-left: 30px;
