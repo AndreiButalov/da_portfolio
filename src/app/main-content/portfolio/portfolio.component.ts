@@ -23,7 +23,7 @@ export class PortfolioComponent {
     {
       name: 'Join',
       image: 'assets/img/join.png',
-      index: '01/04',
+      index: '01/03',
       language: 'Angular | TypeScript | HTML | CSS | Firebase',
       link: 'https://github.com/AndreiButalov/join',
       tryLink: 'https://andrei-butalov.de/join/index.html',
@@ -35,7 +35,7 @@ export class PortfolioComponent {
     {
       name: 'Sharkie',
       image: 'assets/img/sharkie.png',
-      index: '02/04',
+      index: '02/03',
       language: 'JavaScript | HTML | CSS',
       link: 'https://github.com/AndreiButalov/sharkie_game',
       tryLink: 'https://andrei-butalov.de/sharkie_game/index.html',
@@ -59,7 +59,7 @@ export class PortfolioComponent {
     {
       name: 'Pokedex',
       image: 'assets/img/pokemon.png',
-      index: '04/04',
+      index: '03/03',
       language: 'JavaScript | HTML | CSS | Api',
       link: 'https://github.com/AndreiButalov/Pokemon-Wiki',
       tryLink: 'https://andrei-butalov.de/pokemon_wiki/index.html',
