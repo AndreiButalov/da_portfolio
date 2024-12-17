@@ -44,6 +44,7 @@ export class PortfolioComponent {
       descriptionDe: `Ein einfaches Jump-and-Run-Spiel basierend auf einem 
       objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.`
     },
+    // number ändern 
     // {
     //   name: 'DABubble',
     //   image: 'assets/img/bubble.png',
