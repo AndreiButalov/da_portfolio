@@ -289,6 +289,15 @@
     .projeckt_description {
         width: 100%;
         height: auto;
+        visibility: initial;
+        transition: none;        
+    }    
+
+    .portfolio_projects:hover .projeckt_description {
+        animation-name: none;
+        animation-duration: 0;
+        animation-timing-function: none;
+        animation-iteration-count: 0;
     }
 
     .arrow_section {

@@ -6,12 +6,13 @@
 .footer_background {
     background-image: url("./../../../assets/img/Rectangle 5 (1).png");
     background-size: cover;
-    max-width: 1920px;
+    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    height: auto;
 }
 
 .footer {
@@ -26,7 +27,7 @@
     >img {
         height: 78px;
         width: 426px;
-        margin-top: 150px;
+        margin-top: 250px;
     }
 }
 
@@ -134,8 +135,7 @@
     justify-content: center;
     color: white;
     text-align: center;
-    padding-top: 60px;
-    background-color: black;
+    padding-top: 60px;    
     position: relative;
 
     h1 {
@@ -407,4 +407,9 @@
         padding: 10px 40px;
         font-size: 14px;        
     }   
+
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
