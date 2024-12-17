@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from "../shared/footer/footer.component";
 import { LanguageService } from '../shared/language/language.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-menu-content',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [
+    FooterComponent,
+    RouterModule
+  ],
   templateUrl: './menu-content.component.html',
   styleUrl: './menu-content.component.scss'
 })
