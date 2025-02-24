@@ -43,6 +43,8 @@ h1 {
     .foto {
         width: 450px;
         object-fit: cover;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
     }
 
     .foto_border {
@@ -164,7 +166,7 @@ h1 {
 
 @media (max-width: 350px) {
     .foto_wrapper {
-        
+
         .foto_border {
             display: block;
             width: 248px;
