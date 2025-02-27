@@ -25,8 +25,8 @@ export class PortfolioComponent {
       image: 'assets/img/bubble.png',
       index: '01/04',
       language: 'Angular | TypeScript | Firebase',
-      link: '',
-      tryLink: '',
+      link: 'https://github.com/AndreiButalov/DaBubble',
+      tryLink: 'https://andrei-butalov.de/angular-projects/daBubble',
       description: `This App is a Slack Clone App. It revolutionizes team communication 
       and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
       descriptionDe: `Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation 
