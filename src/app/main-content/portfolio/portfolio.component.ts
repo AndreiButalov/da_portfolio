@@ -21,21 +21,21 @@ export class PortfolioComponent {
 
   projektsPortfolio = [
     {
-      name: 'Join',
-      image: 'assets/img/join.png',
-      index: '01/03',
-      language: 'Angular | TypeScript | HTML | CSS | Firebase',
-      link: 'https://github.com/AndreiButalov/join',
-      tryLink: 'https://andrei-butalov.de/join/index.html',
-      description: `Task manager inspired by the Kanban System. Create 
-      and organize task using drag and drop function, assing user and categories.`,
-      descriptionDe: `Task-Manager inspiriert vom Kanban-System. Erstellen 
-      und organisieren Sie Aufgaben mit einer Drag-and-Drop-Funktion, weisen Sie Benutzer und Kategorien zu.`
+      name: 'DABubble',
+      image: 'assets/img/bubble.png',
+      index: '01/04',
+      language: 'Angular | TypeScript | Firebase',
+      link: '',
+      tryLink: '',
+      description: `This App is a Slack Clone App. It revolutionizes team communication 
+      and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
+      descriptionDe: `Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation 
+      und zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Messaging und einer leistungsstarken Kanalorganisation.`
     },
     {
       name: 'Sharkie',
       image: 'assets/img/sharkie.png',
-      index: '02/03',
+      index: '02/04',
       language: 'JavaScript | HTML | CSS',
       link: 'https://github.com/AndreiButalov/sharkie_game',
       tryLink: 'https://andrei-butalov.de/sharkie_game/index.html',
@@ -44,23 +44,22 @@ export class PortfolioComponent {
       descriptionDe: `Ein einfaches Jump-and-Run-Spiel basierend auf einem 
       objektorientierten Ansatz. Hilf Sharkie, Münzen und Giftflaschen zu finden, um gegen den Killerwal zu kämpfen.`
     },
-    // number ändern 
-    // {
-    //   name: 'DABubble',
-    //   image: 'assets/img/bubble.png',
-    //   index: '03/04',
-    //   language: 'Angular | TypeScript | Firebase',
-    //   link: '',
-    //   tryLink: '',
-    //   description: `This App is a Slack Clone App. It revolutionizes team communication 
-    //   and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
-    //   descriptionDe: `Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation 
-    //   und zusammenarbeit mit einer intuitiven Benutzeroberfläche, Echtzeit-Messaging und einer leistungsstarken Kanalorganisation.`
-    // },
+    {
+      name: 'Join',
+      image: 'assets/img/join.png',
+      index: '03/04',
+      language: 'JavaScript | HTML | CSS',
+      link: 'https://github.com/AndreiButalov/join',
+      tryLink: 'https://andrei-butalov.de/join/index.html',
+      description: `Task manager inspired by the Kanban System. Create 
+      and organize task using drag and drop function, assing user and categories.`,
+      descriptionDe: `Task-Manager inspiriert vom Kanban-System. Erstellen 
+      und organisieren Sie Aufgaben mit einer Drag-and-Drop-Funktion, weisen Sie Benutzer und Kategorien zu.`
+    },
     {
       name: 'Pokedex',
       image: 'assets/img/pokemon.png',
-      index: '03/03',
+      index: '04/04',
       language: 'JavaScript | HTML | CSS | Api',
       link: 'https://github.com/AndreiButalov/Pokemon-Wiki',
       tryLink: 'https://andrei-butalov.de/pokemon_wiki/index.html',
@@ -71,3 +70,5 @@ export class PortfolioComponent {
   ]
   
 }
+
+
