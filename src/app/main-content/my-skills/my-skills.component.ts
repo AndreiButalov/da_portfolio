@@ -28,7 +28,7 @@ export class MySkillsComponent {
     { name: "Firebase", icon: "assets/img/Firebase.png"},
     { name: "Git", icon: "assets/img/git.png"},
     { name: "Scrum", icon: "assets/img/scrum.png"},
-    { name: "Rest-Api", icon: "assets/img/api.png"},
+    { name: "Rest-Api", icon: "assets/img/Screenshot 2025-03-09 101900.png"},
     { name: "Material Design", icon: "assets/img/Group.png"}
   ]
   

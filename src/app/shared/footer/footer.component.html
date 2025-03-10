@@ -1,13 +1,14 @@
 <div class="footer_content">
     <div class="footer_background">           
         <div class="footer">
-            <img src="assets/img/Say Hi!.png">
+            <!-- <img src="assets/img/Say Hi!.png"> -->
+            <div class="say_hi"></div>
             <div *ngIf="showContactForm" class="contact_me_content">
                 <div id="contact_me" class="formular">
                     <h1>
-                        {{ isEnglish ? "Want to discuss a new project?" : "Möchtest du ein neues Projekt besprechen?" }}
+                        {{ isEnglish ? "Want to discuss a new project?" : "Möchten Sie ein neues Projekt besprechen?" }}
                     </h1>                
-                    <h2>{{ isEnglish ? "Say hello! Let's discuss your ideas and make it happen" : "Hallo! Lass uns über deine Ideen sprechen und sie verwirklichen" }}</h2>                
+                    <h2>{{ isEnglish ? "Let's discuss your ideas and make it happen" : "Lassen Sie uns über Ihre Ideen sprechen und sie verwirklichen" }}</h2>                
                     <div *ngIf="showSuccessMessage" class="success-popup">
                         <span class="success_popup_message">
                             {{ isEnglish ? "Your message has been sent successfully." : "Ihre Nachricht wurde erfolgreich gesendet." }}
