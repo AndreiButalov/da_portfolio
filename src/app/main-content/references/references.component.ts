@@ -26,35 +26,24 @@ export class ReferencesComponent {
   references = [
     {
       image: 'assets/img/format_quote.png',
-      name: 'David',
+      name: 'David Meier',
       status: 'Team Partner',
-      description: `Andrei is an extremely talented and reliable programmer. 
-      His ability to solve complex problems while communicating clearly has 
-      greatly advanced our team.`,
-      descriptionDe: `Andrei ist ein äußerst talentierter und zuverlässiger 
-      Programmierer. Seine Fähigkeit, komplexe Probleme zu lösen und dabei klar 
-      zu kommunizieren, hat unser Team enorm vorangebracht.`
+      description: `Andrei works very reliably and competently. He solves complex problems and communicates clearly, which has helped the team make progress.`,
+      descriptionDe: `Andrei arbeitet sehr zuverlässig und kompetent. Er löst komplexe Probleme und kommuniziert dabei klar, was das Team vorangebracht hat.`
     },
     {
       image: 'assets/img/format_quote.png',
-      name: 'Frank',
+      name: 'Frank Marchner',
       status: 'Team Partner',
-      description: `Working with Andrei was always effective and inspiring. 
-      His professionalism and dedication make him an indispensable team member.`,
-      descriptionDe: `Die Zusammenarbeit mit Andrei war stets effektiv und 
-      inspirierend. Seine Professionalität und sein Engagement machen ihn zu 
-      einem unverzichtbaren Teammitglied.`
+      description: `Working with Andrei is effective and pleasant. His professionalism and commitment contribute to the team's success.`,
+      descriptionDe: `Die Zusammenarbeit mit Andrei ist effektiv und angenehm. Seine Professionalität und sein Engagement tragen zum Erfolg des Teams bei.`
     },
     {
       image: 'assets/img/format_quote.png',
-      name: 'Robert',
+      name: 'Robert Winner',
       status: 'Team Partner',
-      description: `Andrei not only has technical expertise but also brings 
-      positive and motivating energy to the team. His cooperative nature makes 
-      implementing even the most challenging projects easier.`,
-      descriptionDe: `Andrei hat nicht nur technisches Fachwissen, sondern 
-      bringt auch eine positive und motivierende Energie ins Team. Seine 
-      kooperative Art erleichtert die Umsetzung selbst anspruchsvollster Projekte.`
+      description: `Andrei brings technical knowledge to the team and supports the implementation of projects constructively. His cooperative approach makes collaboration easier.`,
+      descriptionDe: `Andrei bringt technisches Wissen ins Team und unterstützt die Umsetzung von Projekten konstruktiv. Seine kooperative Art erleichtert die Zusammenarbeit.`
     },
   ] 
     
