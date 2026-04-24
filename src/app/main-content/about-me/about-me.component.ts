@@ -15,16 +15,15 @@ export class AboutMeComponent {
     return this.languageService.getLanguage();
   }
 
-  aboutMeEn = `I’m a front-end developer based in Kerpen, 
-  Germany, helping designers and companies turn their ideas 
-  into reality. With creativity and logical thinking, I transform 
-  concepts into high-quality products. If you think I’d be a great 
-  fit for your project, feel free to get in touch!`;
+  aboutMeEn = `I am a fullstack developer and I build modern, user-friendly 
+  applications with great passion. My goal is to turn ideas into innovative 
+  and reliable solutions that create real value. I work on both frontend and 
+  backend, placing strong emphasis on clean code, creative thinking, 
+  and continuous development—both professionally and personally.`;
 
-  aboutMeDe = `Ich bin ein Frontend-Entwickler aus Kerpen, 
-  Deutschland, und helfe Designern und Unternehmen dabei, 
-  ihre Ideen in die Realität umzusetzen. Mit Kreativität und 
-  logischem Denken verwandle ich Konzepte in hochwertige Produkte. 
-  Wenn Sie denken, dass ich gut zu Ihrem Projekt passe, zögern 
-  Sie nicht, mich zu kontaktieren!`;
+  aboutMeDe = `Ich bin Fullstack-Entwickler und entwickle mit großer Begeisterung moderne, 
+  benutzerfreundliche Anwendungen. Mein Ziel ist es, Ideen in innovative und zuverlässige 
+  Lösungen umzusetzen, die echten Mehrwert schaffen. Dabei arbeite ich sowohl im Frontend 
+  als auch im Backend und lege großen Wert auf sauberen Code, kreatives Denken und 
+  kontinuierliche Weiterentwicklung – sowohl fachlich als auch persönlich`;
 }
