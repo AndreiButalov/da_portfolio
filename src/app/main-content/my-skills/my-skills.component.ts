@@ -29,7 +29,12 @@ export class MySkillsComponent {
     { name: "Git", icon: "assets/img/git.png"},
     { name: "Scrum", icon: "assets/img/scrum.png"},
     { name: "Rest-Api", icon: "assets/img/Screenshot 2025-03-09 101900.png"},
-    { name: "Material Design", icon: "assets/img/Group.png"}
+    { name: "Material Design", icon: "assets/img/Group.png"},
+    { name: "Python", icon: "assets/img/icons8-python-100.png"},
+    { name: "Django", icon: "assets/img/icons8-django-96.png"},
+    { name: "Redis", icon: "assets/img/icons8-redis-96.png"},
+    { name: "Docker", icon: "assets/img/icons8-docker-96.png"},
+    { name: "Postgresql", icon: "assets/img/icons8-postgresql-96.png"}
   ]
   
 }
