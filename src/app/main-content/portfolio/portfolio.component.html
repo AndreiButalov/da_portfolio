@@ -6,7 +6,7 @@
             <h2>{{ isEnglish ? "project to see my skills in action" : "dem Projekt, um meine Fähigkeiten in Aktion zu sehen." }}</h2>
         </div>
 
-        <div>Backend-Projekte</div>
+        <div class="projekts_description">Backend-Projekte:</div>
 
         @for (item of projektsPortfolioBacken; track item.index) {
             <div class="portfolio_projects {{ (item.index === '01/03' || item.index === '03/03') ? 'row-reverse' : '' }}">
@@ -22,16 +22,13 @@
                         <p>{{ isEnglish ? item.description : item.descriptionDe }}</p>
                     </div>
                     <div class="links_group_backend">
-                        <a href="{{ item.link }}" target="_blank" class="button_group">Github</a>
-                        <!-- <a href="{{ item.tryLink }}" target="_blank" class="button_group">
-                            {{ isEnglish ? "Try" :  "Versuchen" }}
-                        </a> -->
+                        <a href="{{ item.link }}" target="_blank" class="button_group">Github</a>                        
                     </div>
                 </div>
             </div>
         }
 
-        <div>Frontend-Projekte</div>
+        <div class="projekts_description">Frontend-Projekte:</div>
     
         @for (item of projektsPortfolioFrontend; track item.index) {
             <div class="portfolio_projects {{ (item.index === '02/04' || item.index === '04/04') ? 'row-reverse' : '' }}">
