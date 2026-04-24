@@ -19,7 +19,7 @@ export class PortfolioComponent {
     return this.languageService.getLanguage();
   }
 
-  projektsPortfolio = [
+  projektsPortfolioFrontend = [
     {
       name: 'DABubble',
       image: 'assets/img/bubble.png',
@@ -68,7 +68,47 @@ export class PortfolioComponent {
       die Pokémon-Informationen bereitstellt und katalogisiert.`
     },
   ]
+
+   projektsPortfolioBacken = [
+      {
+        name: 'Videoflix',
+        image: 'assets/img/Screenshot 2026-04-24 102031.png',
+        index: '01/03',
+        language: 'Python | DRF | PostgreSQL | Docker | Redis | JWTAuth',
+        link: 'https://github.com/AndreiButalov/videoflix_backend',
+        description: `This is the backend for the Videoflix platform, built with Django and Django REST Framework. 
+        It provides authentication, video management, and API endpoints for the frontend application.`,
+        descriptionDe: `Dies ist das Backend für die Videoflix-Plattform, entwickelt mit Django und Django REST Framework. 
+        Es bietet Authentifizierung, Video-Management und API-Endpunkte für die Frontend-Anwendung.`
+      },
+      {
+        name: 'Coderr',
+        image: 'assets/img/Screenshot 2026-04-24 100525.png',
+        index: '02/03',
+        language: 'Python | DRF | Token Auth | Postman',
+        link: 'https://github.com/AndreiButalov/coderr_backend',
+        description: `Coderr is a backend for a freelance platform built with Django and DRF. It allows users 
+        to register as either customers or businesses, manage profiles, create and edit offers, place orders, and leave reviews.`,
+        descriptionDe: `Coderr ist ein Backend für eine Freelance-Plattform, entwickelt mit Django 
+        und DRF. Die Anwendung ermöglicht es Nutzern, sich als Kunde oder Unternehmen         
+        zu registrieren, Profile zu verwalten, Angebote zu erstellen und zu bearbeiten, Aufträge zu vergeben 
+        und Bewertungen abzugeben.`
+      },
+      {
+        name: 'KanMind',
+        image: 'assets/img/Screenshot 2026-04-24 100336.png',
+        index: '03/03',
+        language: 'Python | DRF | Token Auth | Postman',        
+        link: 'https://github.com/AndreiButalov/kanMind_backend',
+        description: `KanMind is an intuitive, API-based Kanban board application that enables teams to plan, organize, 
+        and comment on tasks. The backend is built with Django and Django REST Framework.`,
+        descriptionDe: `KanMind ist eine intuitive, API-basierte Kanban-Board-Anwendung, mit der Teams 
+        Aufgaben planen, organisieren und kommentieren können. Das Backend basiert auf Django und Django REST Framework.`
+      },  
+  ]
   
 }
 
+
+ 
 
